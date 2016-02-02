@@ -1,5 +1,6 @@
 {
   "name": "lobbykit/intra",
+  "version": "0.1",
   "type": "project",
   "license": "MIT",
   "description": "A modern WordPress intranet",
