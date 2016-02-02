@@ -1,0 +1,44 @@
+{
+  "name": "lobbykit/intra",
+  "type": "project",
+  "license": "MIT",
+  "description": "A modern WordPress intranet",
+  "homepage": "https://www.lobbykit.io/",
+  "authors": [
+    {
+      "name": "Andreas Ek",
+      "email": "andreas@aekab.se",
+      "homepage": "http://www.aekab.se"
+    }
+  ],
+  "keywords": [
+    "intranet", "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/lobbykit/intra/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "composer/installers": "~1.0.12",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.4.1",
+    "oscarotero/env": "^1.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  }
+}
