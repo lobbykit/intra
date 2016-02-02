@@ -15,7 +15,7 @@ elixir(function(mix) {
 		'bootstrap-checkbox-radio-switch.js',
 		'bootstrap-notify.js',
 		'light-bootstrap-dashboard.js',
-		'chartist.js',
+		'chartist.min.js',
 		'demo.js'
     ]);
 

@@ -1,1 +1,2 @@
-Move on! Nothing here to see!
+<?php
+	bladerunner('views.pages.index');
