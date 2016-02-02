@@ -14,6 +14,7 @@ Intranet based on WordPress and open source components/services *only*
 * [Github Issues](https://github.com/lobbykit/intra/issues)
 
 ## Next step in development
+[![Trello](https://img.shields.io/badge/trello-planning-blue.svg)]()
 Please follow the open board at [Trello](https://trello.com/b/WrsoBaMR/intra)!
 
 ## Design
