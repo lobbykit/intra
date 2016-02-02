@@ -3,6 +3,9 @@
 [![Packagist](https://img.shields.io/packagist/v/lobbykit/intra.svg)]() 
 [![Packagist](https://img.shields.io/packagist/l/lobbykit/intra.svg)]() 
 
+## Vision
+Intranet based on WordPress and open source components/services *only*
+
 ** WORK IN PROGRESS **
 
 ## To Do
