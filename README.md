@@ -8,8 +8,16 @@ Intranet based on WordPress and open source components/services *only*
 
 ** WORK IN PROGRESS **
 
-## To Do
+## Team Communications
+* [Slack](https://lobbykit.slack.com)
+* [Trello](https://trello.com/b/WrsoBaMR/intra)
+* [Github Issues](https://github.com/lobbykit/intra/issues)
+
+## Next step in development
 Please follow the open board at [Trello](https://trello.com/b/WrsoBaMR/intra)!
+
+## Design
+Open to suggestions but we base our product on Twitter Bootstrap 3 at the moment.
 
 ## Components
 These are components implemented:
@@ -19,6 +27,8 @@ These are components implemented:
 These are components planned to implement:
 * Travis CI
 * Style CI
+* Papi
+* Bladerunner
 
 ## Contribution
 ...
