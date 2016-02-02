@@ -5,7 +5,7 @@ $lobbykit_includes = [
   'lib/Extras.php',        // Custom functions
   'lib/Setup.php',         // Theme setup
   'lib/Papi.php',        // Papi specific helpers
-  'lib/Helpers.php'    // Global helpers
+  'lib/Helpers.php',    // Global helpers
 ];
 foreach ($lobbykit_includes as $file) {
     if (!$filepath = locate_template($file)) {
