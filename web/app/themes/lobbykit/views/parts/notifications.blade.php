@@ -11,7 +11,7 @@
             <li>
                 <a href="" class="notification-item">
                     <div class="img-col">
-                        <div class="img" style="background-image: url('{{ assets('assets/faces/3.jpg') }}')"></div>
+                        <div class="img" style="background-image: url('{{ get_avatar(get_current_user_id()) }}')"></div>
                     </div>
                     <div class="body-col">
                         <p> <span class="accent">Zack Alien</span> pushed new commit: <span class="accent">Fix page load performance issue</span>. </p>

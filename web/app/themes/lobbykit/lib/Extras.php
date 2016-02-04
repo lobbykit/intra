@@ -9,3 +9,4 @@ function assets($file)
 {
     return \LobbyKit\Intra\Assets::get($file);
 }
+

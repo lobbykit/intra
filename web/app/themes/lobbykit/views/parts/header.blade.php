@@ -15,8 +15,9 @@
             @if(is_user_logged_in())
                 @include('views.parts.notifications')
                 @include('views.parts.profile-dropdown')
+                @include('views.parts.logout-button')
             @else
-                @include('views.parts.login-dropdown')
+                @include('views.parts.login-button')
             @endif
         </ul>
     </div>

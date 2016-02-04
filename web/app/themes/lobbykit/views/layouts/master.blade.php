@@ -11,10 +11,13 @@
                 @include('views.parts.sidebar')
                 @yield('contents')
                 @include('views.parts.footer')
-                @include('views.parts.modals')
+                @if( !is_user_logged_in() )
+                    @include('views.modals.login')
+                @endif
             </div>
         </div>
 
         @include('views.parts.scripts')
+
     </body>
 </html>
