@@ -27,7 +27,7 @@
 
                 <div class="form-group">
                     <label for="email">{{ __('Email','intra') }}</label>
-                    <input v-model="email" v-on:keyup.enter="login" type="email" class="form-control underlined" placeholder="Your email address" required autofocus="autofocus" />
+                    <input v-model="email" v-on:keyup.enter="login" type="string" class="form-control underlined" placeholder="Your email address" required autofocus="autofocus" />
                 </div>
                 
                 <div class="form-group">
