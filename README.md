@@ -18,7 +18,8 @@ Intranet based on WordPress and open source components/services *only*
 Please follow the open board at [Trello](https://trello.com/b/WrsoBaMR/intra)!
 
 ## Design
-Open to suggestions but we base our product on Twitter Bootstrap 3 at the moment.
+Open to suggestions but we base our product on Twitter Bootstrap 4 at the moment.
+Meanwhile we are going to use the [Moduler-Admin-Html](https://github.com/modularcode/modular-admin-html) as a base.
 
 ## Services
 * PHP 7
