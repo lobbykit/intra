@@ -23,13 +23,12 @@ class Setup
         }
     }
 
-
     public static function register_menues()
     {
         register_nav_menus([
-            'sidebar-authorized' => __('Sidebar Authorized', 'intra'),
+            'sidebar-authorized'   => __('Sidebar Authorized', 'intra'),
             'sidebar-unauthorized' => __('Sidebar Unauthorized', 'intra'),
-            'footer-menu' => __('Footer Menu', 'intra'),
+            'footer-menu'          => __('Footer Menu', 'intra'),
         ]);
     }
 
@@ -38,6 +37,7 @@ class Setup
         if (in_array('current-menu-item', $classes)) {
             $classes[] = 'active ';
         }
+
         return $classes;
     }
 }
