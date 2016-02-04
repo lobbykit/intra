@@ -32,7 +32,7 @@ class Mandrill
                     'type'  => 'to',
                 ],
             ],
-            'headers'    => $headers,
+            'headers'    => ['Reply-To' => get_bloginfo('admin_email')],
         ];
         $async = false;
         try {

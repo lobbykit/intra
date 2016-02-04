@@ -14,4 +14,5 @@ add_filter('papi/settings/directories', function ($directories) {
 
 add_action('wp_ajax_nopriv_login', '\LobbyKit\Intra\Authentications\Login::ajax');
 add_action('wp_ajax_nopriv_forgot', '\LobbyKit\Intra\Authentications\Forgot::ajax');
+add_action('wp_ajax_nopriv_forgot_request', '\LobbyKit\Intra\Authentications\Forgot::request');
 add_action('wp_ajax_nopriv_register', '\LobbyKit\Intra\Authentications\Register::ajax');

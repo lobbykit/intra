@@ -108,7 +108,6 @@
               forgotVue.warning='';
               if( data.success ) {
                 forgotVue.success = data.message;
-                location.reload(); 
               }
               else {
                 forgotVue.error = data.message;
