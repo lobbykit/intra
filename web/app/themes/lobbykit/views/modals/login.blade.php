@@ -43,28 +43,24 @@
                 </div>
                 
                 <div class="form-group">
-                    <button v-on:click="login" class="btn btn-primary">
+                    <button v-on:click="login" class="btn btn-primary btn-block">
                         <i class="fa fa-sign-in"></i> <?=__('Login','intra')?>
                     </button>
-                    <a href="#" class="btn btn-warning pull-right">
-                        <i class="fa fa-plus"></i> <?=__('New account','intra')?>
-                    </a>
-                    <span class="pull-right">&nbsp;</span>
-                    <button class="btn btn-success pull-right" type="button" data-toggle="collapse" data-target="#slack-login-form" aria-expanded="false" aria-controls="slack-login-form">
-                        <i class="fa fa-slack"></i> <?=__('Slack account','intra')?>
-                    </button>
                 </div>
-                    
 
+            </div>
+            <div class="modal-footer">
                 <form class="collapse" id="slack-login-form" action="/" method="POST" novalidate="">
                     <div class="form-group">
-                        <label for="slack"><?=__('Alternative login via Slack code','intra')?></label>
-                        <input type="text" class="form-control underlined" name="slack" id="slack" placeholder="<?=__('A generated Slack code','intra')?>" required />
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-success"><?=__('Slack Login','intra')?></button>
+                        <input type="text" class="form-control underlined" name="slack" id="slack" placeholder="<?=__('Enter Slack generated code here and press enter!','intra')?>" required />
                     </div>
                 </form>
+                <button class="btn btn-success pull-left" type="button" data-toggle="collapse" data-target="#slack-login-form" aria-expanded="false" aria-controls="slack-login-form">
+                    <i class="fa fa-slack"></i> <?=__('Slack account','intra')?>
+                </button>
+                <a href="#" class="btn btn-warning pull-right">
+                    <i class="fa fa-plus"></i> <?=__('New account','intra')?>
+                </a>
             </div>
         </div>
     </div>
