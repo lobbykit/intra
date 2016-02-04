@@ -7,6 +7,8 @@ class Setup
     public function __construct()
     {
         add_filter('pre_http_request', '\LobbyKit\Intra\Setup::wp_api_block_request', 10, 3);
+        add_action('init', '\LobbyKit\Intra\Setup::register_menues');
+        add_filter('nav_menu_css_class', '\LobbyKit\Intra\Setup::special_nav_class', 10, 2);
     }
 
     /**
@@ -19,6 +21,24 @@ class Setup
         } else {
             return $pre;
         }
+    }
+
+
+    public static function register_menues()
+    {
+        register_nav_menus([
+            'sidebar-authorized' => __('Sidebar Authorized', 'intra'),
+            'sidebar-unauthorized' => __('Sidebar Unauthorized', 'intra'),
+            'footer-menu' => __('Footer Menu', 'intra'),
+        ]);
+    }
+
+    public static function special_nav_class($classes, $item)
+    {
+        if (in_array('current-menu-item', $classes)) {
+            $classes[] = 'active ';
+        }
+        return $classes;
     }
 }
 

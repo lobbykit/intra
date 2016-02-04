@@ -36,7 +36,8 @@
     "wp-papi/papi": "*",
     "ekandreas/bladerunner": "*",
     "wpackagist-plugin/use-any-font": "*",
-    "wpackagist-plugin/groups": "*"
+    "wpackagist-plugin/groups": "*",
+    "wpackagist-plugin/menu-icons": "*"
   },
   "extra": {
     "installer-paths": {

@@ -8,7 +8,6 @@
             <div class="app" id="app">
                 @include('views.parts.header')
                 @include('views.parts.sidebar')
-                @include('views.parts.sidebar-overlay')
                 @yield('contents')
                 @include('views.parts.footer')
                 @include('views.parts.modals')

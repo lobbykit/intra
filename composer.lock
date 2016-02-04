@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "56774aca7b1fb47486209b58fa069dab",
-    "content-hash": "ab2c207ed17b0fa0937798d690339066",
+    "hash": "22d3598ff66a252b7ae5bf81edccaa0d",
+    "content-hash": "a4d60eafd1a9e15bd8726d9d5166b521",
     "packages": [
         {
             "name": "composer/installers",
@@ -794,6 +794,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/groups/"
+        },
+        {
+            "name": "wpackagist-plugin/menu-icons",
+            "version": "0.9.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/menu-icons/",
+                "reference": "tags/0.9.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/menu-icons.0.9.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/menu-icons/"
         },
         {
             "name": "wpackagist-plugin/use-any-font",
