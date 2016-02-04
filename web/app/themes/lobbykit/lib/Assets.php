@@ -20,7 +20,7 @@ class Assets
     public static function enqueueScripts()
     {
         $version = time();
-        if(!WP_DEBUG) {
+        if (!WP_DEBUG) {
             $theme = wp_get_theme();
             $version = $theme->version;
         }
@@ -36,8 +36,8 @@ class Assets
         } else {
             $data = [
                 'waiting_message' => __('Please, wait for response...', 'intra'),
-                'ajax_url' => admin_url('admin-ajax.php'),
-                'nonce' => wp_create_nonce('lobbykit'),
+                'ajax_url'        => admin_url('admin-ajax.php'),
+                'nonce'           => wp_create_nonce('lobbykit'),
             ];
             wp_enqueue_script('unauthenticated-js', assets('js/unauthenticated.js'), [], $version, true);
             wp_localize_script('unauthenticated-js', 'wpdata', $data);

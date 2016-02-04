@@ -1,4 +1,5 @@
 <?php
+
 namespace LobbyKit\Intra;
 
 class Authentications
@@ -25,24 +26,24 @@ class Authentications
 
             if (!$user) {
                 $result['success'] = false;
-                $result['message'] = __("Sorry! Given credentials is not correct.",'intra');
+                $result['message'] = __('Sorry! Given credentials is not correct.', 'intra');
             } else {
                 $creds = [];
                 $creds['user_login'] = $user->user_login;
                 $creds['user_password'] = $_REQUEST['password'];
-                $creds['remember'] = isset($_REQUEST['remember'])?$_REQUEST['remember']:false;
+                $creds['remember'] = isset($_REQUEST['remember']) ? $_REQUEST['remember'] : false;
                 $user = wp_signon($creds, false);
                 if (is_wp_error($user)) {
                     $result['success'] = false;
-                    $result['message'] = __("Sorry! Given credentials is not correct.",'intra');
+                    $result['message'] = __('Sorry! Given credentials is not correct.', 'intra');
                 } else {
                     $result['success'] = true;
-                    $result['message'] = __("Welcome! We will now start redirecting you...",'intra');
+                    $result['message'] = __('Welcome! We will now start redirecting you...', 'intra');
                 }
             }
         } else {
             $result['success'] = false;
-            $result['message'] = __("Security error! Try reload the page and try again! (nonce=$nonce)",'intra');
+            $result['message'] = __("Security error! Try reload the page and try again! (nonce=$nonce)", 'intra');
         }
 
         echo json_encode($result);
