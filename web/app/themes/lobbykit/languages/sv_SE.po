@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-04 18:44+0100\n"
-"PO-Revision-Date: 2016-02-04 18:44+0100\n"
+"POT-Creation-Date: 2016-02-04 19:04+0100\n"
+"PO-Revision-Date: 2016-02-04 19:04+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: functions.php:12
+#: functions.php:13
 #, php-format
 msgid "Error locating %s for inclusion"
 msgstr "Kunde inte hitta %s för inläsning"
@@ -30,22 +30,22 @@ msgid "Please, wait for response..."
 msgstr "Vänta på svar…"
 
 #: lib/Authentications.php:29 lib/Authentications.php:38
-msgid "Sorry! Given credentials is not correct."
-msgstr "Ledsen men angivna uppgifter stämmer inte."
+msgid "Sorry! Given credentials are not correct."
+msgstr "Ledsen men angivna uppgifter är inte korrekta."
 
 #: lib/Authentications.php:41
 msgid "Welcome! We will now start redirecting you..."
 msgstr "Välkommen! Vi slussar dig vidare…"
 
-#: lib/Setup.php:34
+#: lib/Setup.php:35
 msgid "Sidebar Authorized"
 msgstr "Sidopanel för inloggade"
 
-#: lib/Setup.php:35
+#: lib/Setup.php:36
 msgid "Sidebar Unauthorized"
 msgstr "Sidopanel för icke-inloggade"
 
-#: lib/Setup.php:36
+#: lib/Setup.php:37
 msgid "Footer Menu"
 msgstr "Sidfotsmeny"
 
@@ -156,3 +156,6 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://www.aekab.se/"
 msgstr ""
+
+#~ msgid "Sorry! Given credentials is not correct."
+#~ msgstr "Ledsen men angivna uppgifter stämmer inte."

@@ -26,7 +26,7 @@ class Authentications
 
             if (!$user) {
                 $result['success'] = false;
-                $result['message'] = __('Sorry! Given credentials is not correct.', 'intra');
+                $result['message'] = __('Sorry! Given credentials are not correct.', 'intra');
             } else {
                 $creds = [];
                 $creds['user_login'] = $user->user_login;
@@ -35,7 +35,7 @@ class Authentications
                 $user = wp_signon($creds, false);
                 if (is_wp_error($user)) {
                     $result['success'] = false;
-                    $result['message'] = __('Sorry! Given credentials is not correct.', 'intra');
+                    $result['message'] = __('Sorry! Given credentials are not correct.', 'intra');
                 } else {
                     $result['success'] = true;
                     $result['message'] = __('Welcome! We will now start redirecting you...', 'intra');

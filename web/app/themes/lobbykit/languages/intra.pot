@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-04 18:44+0100\n"
+"POT-Creation-Date: 2016-02-04 19:04+0100\n"
 "PO-Revision-Date: 2016-02-04 17:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: functions.php:12
+#: functions.php:13
 #, php-format
 msgid "Error locating %s for inclusion"
 msgstr ""
@@ -30,22 +30,22 @@ msgid "Please, wait for response..."
 msgstr ""
 
 #: lib/Authentications.php:29 lib/Authentications.php:38
-msgid "Sorry! Given credentials is not correct."
+msgid "Sorry! Given credentials are not correct."
 msgstr ""
 
 #: lib/Authentications.php:41
 msgid "Welcome! We will now start redirecting you..."
 msgstr ""
 
-#: lib/Setup.php:34
+#: lib/Setup.php:35
 msgid "Sidebar Authorized"
 msgstr ""
 
-#: lib/Setup.php:35
+#: lib/Setup.php:36
 msgid "Sidebar Unauthorized"
 msgstr ""
 
-#: lib/Setup.php:36
+#: lib/Setup.php:37
 msgid "Footer Menu"
 msgstr ""
 
