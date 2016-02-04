@@ -1,4 +1,4 @@
-    <div class="sidebar" data-color="orange" data-image="{{ assets('img/facetime.jpg') }}">
+    <div class="sidebar" data-color="red2" data-image="{{ assets('img/facetime.jpg') }}">
 
     <!--
 

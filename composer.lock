@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0763c458311615e812ad44aa8506d3a4",
-    "content-hash": "6d7c3fd4aa87ed3a59e9d4c98b873ffb",
+    "hash": "56774aca7b1fb47486209b58fa069dab",
+    "content-hash": "ab2c207ed17b0fa0937798d690339066",
     "packages": [
         {
             "name": "composer/installers",
@@ -174,16 +174,16 @@
         },
         {
             "name": "ekandreas/bladerunner",
-            "version": "1.1",
+            "version": "1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ekandreas/bladerunner.git",
-                "reference": "3dfa68eeb43c0ca13504e935a0dd6b941a81464d"
+                "reference": "a5c9dd2b9d63db9a422d7812525c12f5033ff84e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ekandreas/bladerunner/zipball/3dfa68eeb43c0ca13504e935a0dd6b941a81464d",
-                "reference": "3dfa68eeb43c0ca13504e935a0dd6b941a81464d",
+                "url": "https://api.github.com/repos/ekandreas/bladerunner/zipball/a5c9dd2b9d63db9a422d7812525c12f5033ff84e",
+                "reference": "a5c9dd2b9d63db9a422d7812525c12f5033ff84e",
                 "shasum": ""
             },
             "require": {
@@ -213,7 +213,7 @@
                 "laravel",
                 "wordpress"
             ],
-            "time": "2016-01-29 10:20:30"
+            "time": "2016-02-03 08:36:41"
         },
         {
             "name": "illuminate/container",
@@ -774,6 +774,46 @@
                 "wordpress"
             ],
             "time": "2016-02-02 06:56:01"
+        },
+        {
+            "name": "wpackagist-plugin/groups",
+            "version": "1.10.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/groups/",
+                "reference": "tags/1.10.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/groups.1.10.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/groups/"
+        },
+        {
+            "name": "wpackagist-plugin/use-any-font",
+            "version": "4.4.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/use-any-font/",
+                "reference": "tags/4.4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/use-any-font.4.4.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/use-any-font/"
         }
     ],
     "packages-dev": [

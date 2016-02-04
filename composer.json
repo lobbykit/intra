@@ -34,7 +34,9 @@
     "johnpbloch/wordpress": "4.4.1",
     "oscarotero/env": "^1.0",
     "wp-papi/papi": "*",
-    "ekandreas/bladerunner": "*"
+    "ekandreas/bladerunner": "*",
+    "wpackagist-plugin/use-any-font": "*",
+    "wpackagist-plugin/groups": "*"
   },
   "extra": {
     "installer-paths": {
