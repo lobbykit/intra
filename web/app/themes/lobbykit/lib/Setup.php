@@ -12,8 +12,9 @@ class Setup
         add_action('after_setup_theme', '\LobbyKit\Intra\Setup::theme_setup');
     }
 
-    static function theme_setup(){
-        load_theme_textdomain('intra', get_template_directory() . '/languages');
+    public static function theme_setup()
+    {
+        load_theme_textdomain('intra', get_template_directory().'/languages');
     }
 
     /**

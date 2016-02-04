@@ -1,4 +1,5 @@
 <?php
+
 $lobbykit_includes = [
   'lib/Assets.php',                // Scripts and stylesheets
   'lib/Extras.php',                // Custom functions
