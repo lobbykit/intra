@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-04 19:04+0100\n"
+"POT-Creation-Date: 2016-02-04 23:06+0100\n"
 "PO-Revision-Date: 2016-02-04 17:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,33 +20,100 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: functions.php:13
-#, php-format
-msgid "Error locating %s for inclusion"
+#: page-types/ThemeOptions.php:16
+msgid "Authentication"
 msgstr ""
 
-#: lib/Assets.php:38
+#: page-types/ThemeOptions.php:20
+msgid "Login Message"
+msgstr ""
+
+#: page-types/ThemeOptions.php:26
+msgid "Forgot Message"
+msgstr ""
+
+#: page-types/ThemeOptions.php:32
+msgid "Register Message"
+msgstr ""
+
+#: page-types/ThemeOptions.php:39
+msgid "Register page"
+msgstr ""
+
+#: page-types/ThemeOptions.php:42
+msgid "No register page set!"
+msgstr ""
+
+#: page-types/ThemeOptions.php:51
+msgid "Profile page"
+msgstr ""
+
+#: page-types/ThemeOptions.php:54
+msgid "No profile page set!"
+msgstr ""
+
+#: page-types/ThemeOptions.php:62
+msgid "Mandrill settings"
+msgstr ""
+
+#: page-types/ThemeOptions.php:66
+msgid "From Name"
+msgstr ""
+
+#: page-types/ThemeOptions.php:71
+msgid "From Email"
+msgstr ""
+
+#: page-types/ThemeOptions.php:76
+msgid "Secret Key"
+msgstr ""
+
+#: src/LobbyKit/Intra/Assets.php:30
 msgid "Please, wait for response..."
 msgstr ""
 
-#: lib/Authentications.php:29 lib/Authentications.php:38
+#: src/LobbyKit/Intra/Authentications/Forgot.php:11
+#: src/LobbyKit/Intra/Authentications/Register.php:11
+msgid "NONO!"
+msgstr ""
+
+#: src/LobbyKit/Intra/Authentications/Login.php:23
+#: src/LobbyKit/Intra/Authentications/Login.php:32
 msgid "Sorry! Given credentials are not correct."
 msgstr ""
 
-#: lib/Authentications.php:41
+#: src/LobbyKit/Intra/Authentications/Login.php:35
 msgid "Welcome! We will now start redirecting you..."
 msgstr ""
 
-#: lib/Setup.php:35
+#: src/LobbyKit/Intra/Setup.php:27
 msgid "Sidebar Authorized"
 msgstr ""
 
-#: lib/Setup.php:36
+#: src/LobbyKit/Intra/Setup.php:28
 msgid "Sidebar Unauthorized"
 msgstr ""
 
-#: lib/Setup.php:37
+#: src/LobbyKit/Intra/Setup.php:29
 msgid "Footer Menu"
+msgstr ""
+
+#: views/modals/forgot.blade.php:9
+msgid "Forgotten password"
+msgstr ""
+
+#: views/modals/forgot.blade.php:27 views/modals/login.blade.php:29
+#: views/modals/register.blade.php:42
+msgid "Email"
+msgstr ""
+
+#: views/modals/forgot.blade.php:28 views/modals/login.blade.php:30
+#: views/modals/register.blade.php:43
+msgid "Your Email address"
+msgstr ""
+
+#: views/modals/forgot.blade.php:33
+msgid "Send new password"
 msgstr ""
 
 #: views/modals/login.blade.php:9 views/modals/login.blade.php:47
@@ -54,19 +121,11 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
-#: views/modals/login.blade.php:29
-msgid "Email"
-msgstr ""
-
-#: views/modals/login.blade.php:30
-msgid "Your Email address"
-msgstr ""
-
-#: views/modals/login.blade.php:34
+#: views/modals/login.blade.php:34 views/modals/register.blade.php:47
 msgid "Password"
 msgstr ""
 
-#: views/modals/login.blade.php:35
+#: views/modals/login.blade.php:35 views/modals/register.blade.php:48
 msgid "Your secret password"
 msgstr ""
 
@@ -78,24 +137,48 @@ msgstr ""
 msgid "Forgot password?"
 msgstr ""
 
-#: views/modals/login.blade.php:50
-msgid "New account"
+#: views/modals/login.blade.php:55
+msgid "Enter Slack generated code here and press enter!"
 msgstr ""
 
-#: views/modals/login.blade.php:54
+#: views/modals/login.blade.php:59
 msgid "Slack account"
 msgstr ""
 
-#: views/modals/login.blade.php:61
-msgid "Alternative login via Slack code"
-msgstr ""
-
 #: views/modals/login.blade.php:62
-msgid "A generated Slack code"
+msgid "New account"
 msgstr ""
 
-#: views/modals/login.blade.php:65
-msgid "Slack Login"
+#: views/modals/register.blade.php:9
+msgid "Register new account"
+msgstr ""
+
+#: views/modals/register.blade.php:27
+msgid "Name"
+msgstr ""
+
+#: views/modals/register.blade.php:28
+msgid "Your first name and last name"
+msgstr ""
+
+#: views/modals/register.blade.php:32
+msgid "Workplace"
+msgstr ""
+
+#: views/modals/register.blade.php:33
+msgid "The name of your workspace, not required"
+msgstr ""
+
+#: views/modals/register.blade.php:37
+msgid "Phone"
+msgstr ""
+
+#: views/modals/register.blade.php:38
+msgid "Your phone number for contact, not required"
+msgstr ""
+
+#: views/modals/register.blade.php:53
+msgid "Register"
 msgstr ""
 
 #: views/parts/footer.blade.php:9

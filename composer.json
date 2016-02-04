@@ -37,7 +37,8 @@
     "ekandreas/bladerunner": "*",
     "wpackagist-plugin/use-any-font": "*",
     "wpackagist-plugin/groups": "*",
-    "wpackagist-plugin/menu-icons": "*"
+    "wpackagist-plugin/menu-icons": "*",
+    "mandrill/mandrill": "*"
   },
   "extra": {
     "installer-paths": {

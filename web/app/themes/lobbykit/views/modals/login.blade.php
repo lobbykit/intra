@@ -39,7 +39,7 @@
                     <label for="remember">
                         <input v-model="remember" class="checkbox" type="checkbox" id="remember" name="remember"> <span> <?=__('Remember me','intra')?></span>
                     </label> 
-                    <a href="#" class="forgot-btn pull-right"><?=__('Forgot password?','intra')?></a>
+                    <a href="#" onclick="jQuery('#forgotModal').modal('show'); jQuery('#loginModal').modal('hide');" class="forgot-btn pull-right"><?=__('Forgot password?','intra')?></a>
                 </div>
                 
                 <div class="form-group">
@@ -58,7 +58,7 @@
                 <button class="btn btn-success pull-left" type="button" data-toggle="collapse" data-target="#slack-login-form" aria-expanded="false" aria-controls="slack-login-form">
                     <i class="fa fa-slack"></i> <?=__('Slack account','intra')?>
                 </button>
-                <a href="#" class="btn btn-warning pull-right">
+                <a href="#" onclick="jQuery('#registerModal').modal('show'); jQuery('#loginModal').modal('hide');" class="btn btn-warning pull-right">
                     <i class="fa fa-plus"></i> <?=__('New account','intra')?>
                 </a>
             </div>

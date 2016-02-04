@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-04 19:04+0100\n"
-"PO-Revision-Date: 2016-02-04 19:04+0100\n"
+"POT-Creation-Date: 2016-02-04 23:16+0100\n"
+"PO-Revision-Date: 2016-02-04 23:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -20,53 +20,112 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: functions.php:13
-#, php-format
-msgid "Error locating %s for inclusion"
-msgstr "Kunde inte hitta %s för inläsning"
+#: page-types/ThemeOptions.php:16
+msgid "Authentication"
+msgstr "Autentisering"
 
-#: lib/Assets.php:38
+#: page-types/ThemeOptions.php:20
+msgid "Login Message"
+msgstr "Inloggningsmeddelande"
+
+#: page-types/ThemeOptions.php:26
+msgid "Forgot Message"
+msgstr "Glömt lösenord -meddelande"
+
+#: page-types/ThemeOptions.php:32
+msgid "Register Message"
+msgstr "Registreringsmeddelande"
+
+#: page-types/ThemeOptions.php:39
+msgid "Register page"
+msgstr "Registreringssida"
+
+#: page-types/ThemeOptions.php:42
+msgid "No register page set!"
+msgstr "Registreringssida ej vald!"
+
+#: page-types/ThemeOptions.php:51
+msgid "Profile page"
+msgstr "Profilsida"
+
+#: page-types/ThemeOptions.php:54
+msgid "No profile page set!"
+msgstr "Profilsida ej vald!"
+
+#: page-types/ThemeOptions.php:62
+msgid "Mandrill settings"
+msgstr "Inställningar Mandrill"
+
+#: page-types/ThemeOptions.php:66
+msgid "From Name"
+msgstr "Namn (från)"
+
+#: page-types/ThemeOptions.php:71
+msgid "From Email"
+msgstr "E-post (från)"
+
+#: page-types/ThemeOptions.php:76
+msgid "Secret Key"
+msgstr "Hemlig nyckel"
+
+#: src/LobbyKit/Intra/Assets.php:30
 msgid "Please, wait for response..."
 msgstr "Vänta på svar…"
 
-#: lib/Authentications.php:29 lib/Authentications.php:38
+#: src/LobbyKit/Intra/Authentications/Forgot.php:11
+#: src/LobbyKit/Intra/Authentications/Register.php:11
+msgid "NONO!"
+msgstr "NEJ NEJ!"
+
+#: src/LobbyKit/Intra/Authentications/Login.php:23
+#: src/LobbyKit/Intra/Authentications/Login.php:32
 msgid "Sorry! Given credentials are not correct."
 msgstr "Ledsen men angivna uppgifter är inte korrekta."
 
-#: lib/Authentications.php:41
+#: src/LobbyKit/Intra/Authentications/Login.php:35
 msgid "Welcome! We will now start redirecting you..."
 msgstr "Välkommen! Vi slussar dig vidare…"
 
-#: lib/Setup.php:35
+#: src/LobbyKit/Intra/Setup.php:27
 msgid "Sidebar Authorized"
 msgstr "Sidopanel för inloggade"
 
-#: lib/Setup.php:36
+#: src/LobbyKit/Intra/Setup.php:28
 msgid "Sidebar Unauthorized"
 msgstr "Sidopanel för icke-inloggade"
 
-#: lib/Setup.php:37
+#: src/LobbyKit/Intra/Setup.php:29
 msgid "Footer Menu"
 msgstr "Sidfotsmeny"
+
+#: views/modals/forgot.blade.php:9
+msgid "Forgotten password"
+msgstr "Glömt lösenord"
+
+#: views/modals/forgot.blade.php:27 views/modals/login.blade.php:29
+#: views/modals/register.blade.php:42
+msgid "Email"
+msgstr "E-postadress"
+
+#: views/modals/forgot.blade.php:28 views/modals/login.blade.php:30
+#: views/modals/register.blade.php:43
+msgid "Your Email address"
+msgstr "Din e-postadress"
+
+#: views/modals/forgot.blade.php:33
+msgid "Send login link"
+msgstr "Skicka inloggingslänk"
 
 #: views/modals/login.blade.php:9 views/modals/login.blade.php:47
 #: views/parts/login-button.blade.php:6
 msgid "Login"
 msgstr "Logga in"
 
-#: views/modals/login.blade.php:29
-msgid "Email"
-msgstr "E-postadress"
-
-#: views/modals/login.blade.php:30
-msgid "Your Email address"
-msgstr "Din e-postadress"
-
-#: views/modals/login.blade.php:34
+#: views/modals/login.blade.php:34 views/modals/register.blade.php:47
 msgid "Password"
 msgstr "Lösenord"
 
-#: views/modals/login.blade.php:35
+#: views/modals/login.blade.php:35 views/modals/register.blade.php:48
 msgid "Your secret password"
 msgstr "Ditt hemliga lösenord"
 
@@ -78,25 +137,49 @@ msgstr "Kom ihåg mig"
 msgid "Forgot password?"
 msgstr "Glömt lösenord?"
 
-#: views/modals/login.blade.php:50
-msgid "New account"
-msgstr "Nytt konto"
+#: views/modals/login.blade.php:55
+msgid "Enter Slack generated code here and press enter!"
+msgstr "Ange kod från Slack och tryck retur!"
 
-#: views/modals/login.blade.php:54
+#: views/modals/login.blade.php:59
 msgid "Slack account"
 msgstr "Slack-kod"
 
-#: views/modals/login.blade.php:61
-msgid "Alternative login via Slack code"
-msgstr "Alternativ inloggning via Slack"
-
 #: views/modals/login.blade.php:62
-msgid "A generated Slack code"
-msgstr "En genererad kod från Slack"
+msgid "New account"
+msgstr "Nytt konto"
 
-#: views/modals/login.blade.php:65
-msgid "Slack Login"
-msgstr "Slack-login"
+#: views/modals/register.blade.php:9
+msgid "Register new account"
+msgstr "Registrera nytt konto"
+
+#: views/modals/register.blade.php:27
+msgid "Name"
+msgstr "Namn"
+
+#: views/modals/register.blade.php:28
+msgid "Your first name and last name"
+msgstr "Ditt förnamn och efternamn"
+
+#: views/modals/register.blade.php:32
+msgid "Workplace"
+msgstr "Arbetsplats"
+
+#: views/modals/register.blade.php:33
+msgid "The name of your workspace, not required"
+msgstr "Namnet på din arbetsplats, ej obligatoriskt"
+
+#: views/modals/register.blade.php:37
+msgid "Phone"
+msgstr "Telefon"
+
+#: views/modals/register.blade.php:38
+msgid "Your phone number for contact, not required"
+msgstr "Ditt telefonnummer för kontakt, ej obligatoriskt"
+
+#: views/modals/register.blade.php:53
+msgid "Register"
+msgstr "Registrera"
 
 #: views/parts/footer.blade.php:9
 msgid "Design by <a href=\"https://github.com/modularcode\">ModularCode</a>"
@@ -156,6 +239,24 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://www.aekab.se/"
 msgstr ""
+
+#~ msgid "Send new login link"
+#~ msgstr "Skicka loginlänk"
+
+#~ msgid "Send new password"
+#~ msgstr "Skicka nytt lösenord"
+
+#~ msgid "Error locating %s for inclusion"
+#~ msgstr "Kunde inte hitta %s för inläsning"
+
+#~ msgid "Alternative login via Slack code"
+#~ msgstr "Alternativ inloggning via Slack"
+
+#~ msgid "A generated Slack code"
+#~ msgstr "En genererad kod från Slack"
+
+#~ msgid "Slack Login"
+#~ msgstr "Slack-login"
 
 #~ msgid "Sorry! Given credentials is not correct."
 #~ msgstr "Ledsen men angivna uppgifter stämmer inte."

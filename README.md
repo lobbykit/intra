@@ -41,6 +41,7 @@ These are components planned to implement:
 ## Integrations
 These are integrations planned to implement:
 * Slack
+* Mandrill
 
 ## Developers
 To get started:

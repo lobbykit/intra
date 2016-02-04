@@ -1,7 +1,7 @@
 <!--
 ### LobbyKit Bladerunner View: views.parts.sidebar
 -->
-<aside class="sidebar" style="background-image:url('{{ assets('assets/bgtexture.png') }}'); background-repeat: repeat-y;">
+<aside class="sidebar" style="background-image:url('{{ assets('images/bgtexture.png') }}'); background-repeat: repeat-y;">
     <div class="sidebar-container">
         <div class="sidebar-header">
             <a href="/">

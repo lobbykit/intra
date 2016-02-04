@@ -13,6 +13,8 @@
                 @include('views.parts.footer')
                 @if( !is_user_logged_in() )
                     @include('views.modals.login')
+                    @include('views.modals.register')
+                    @include('views.modals.forgot')
                 @endif
             </div>
         </div>

@@ -1,16 +1,8 @@
 <?php
-
 namespace LobbyKit\Intra;
 
 class Setup
 {
-    public function __construct()
-    {
-        add_filter('pre_http_request', '\LobbyKit\Intra\Setup::wp_api_block_request', 10, 3);
-        add_action('init', '\LobbyKit\Intra\Setup::register_menues');
-        add_filter('nav_menu_css_class', '\LobbyKit\Intra\Setup::special_nav_class', 10, 2);
-        add_action('after_setup_theme', '\LobbyKit\Intra\Setup::theme_setup');
-    }
 
     public static function theme_setup()
     {
@@ -48,4 +40,3 @@ class Setup
     }
 }
 
-new Setup();

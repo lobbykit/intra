@@ -1,15 +1,9 @@
 <?php
+namespace LobbyKit\Intra\Authentications;
 
-namespace LobbyKit\Intra;
-
-class Authentications
+class Login
 {
-    public function __construct()
-    {
-        add_action('wp_ajax_nopriv_login', '\LobbyKit\Intra\Authentications::login');
-    }
-
-    public static function login()
+    public static function ajax()
     {
         $result = [];
 
@@ -51,5 +45,3 @@ class Authentications
         exit(0);
     }
 }
-
-new Authentications();
