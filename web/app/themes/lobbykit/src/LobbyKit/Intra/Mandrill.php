@@ -1,9 +1,9 @@
 <?php
+
 namespace LobbyKit\Intra;
 
 class Mandrill
 {
-
     protected $subject;
     protected $body;
     protected $text;
@@ -12,39 +12,43 @@ class Mandrill
     protected $result;
 
     /**
-     * Will send message via Mandrill
+     * Will send message via Mandrill.
+     *
      * @return bool result
      */
     public function send()
     {
         $mandrill = new \Mandrill(papi_get_option('mandrill_key'));
-        $message  = array(
+        $message = [
             'html'       => $this->body,
             'text'       => $this->text,
             'subject'    => $this->subject,
             'from_email' => papi_get_option('mandrill_from'),
             'from_name'  => papi_get_option('mandrill_from_name'),
-            'to'         => array(
-                array(
+            'to'         => [
+                [
                     'email' => $this->to_email,
                     'name'  => $this->to_name,
-                    'type'  => 'to'
-                )
-            ),
+                    'type'  => 'to',
+                ],
+            ],
             'headers'    => $headers,
-        );
-        $async    = false;
+        ];
+        $async = false;
         try {
             $this->result = $mandrill->messages->send($message, $async);
+
             return true;
         } catch (Mandrill_Error $e) {
             $this->result = $e->getMessage();
+
             return false;
         }
     }
 
     /**
-     * Set the body
+     * Set the body.
+     *
      * @param string $body message body
      */
     public function setBody($body)
@@ -54,7 +58,8 @@ class Mandrill
     }
 
     /**
-     * Sets the subject
+     * Sets the subject.
+     *
      * @param string $subject strips tags and set subject
      */
     public function setSubject($subject)
@@ -63,7 +68,8 @@ class Mandrill
     }
 
     /**
-     * Set message to email
+     * Set message to email.
+     *
      * @param string $email the email address
      */
     public function setToEmail($email)
@@ -72,7 +78,8 @@ class Mandrill
     }
 
     /**
-     * Sets message to name
+     * Sets message to name.
+     *
      * @param string $name the name of the message receiver
      */
     public function setToName($name)
@@ -81,10 +88,12 @@ class Mandrill
     }
 
     /**
-     * [getResult description]
+     * [getResult description].
+     *
      * @return [type] [description]
      */
-    public function getResult() {
-    	return $this->result;
+    public function getResult()
+    {
+        return $this->result;
     }
 }

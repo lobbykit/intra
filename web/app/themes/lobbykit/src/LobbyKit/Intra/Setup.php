@@ -1,9 +1,9 @@
 <?php
+
 namespace LobbyKit\Intra;
 
 class Setup
 {
-
     public static function theme_setup()
     {
         load_theme_textdomain('intra', get_template_directory().'/languages');
@@ -39,4 +39,3 @@ class Setup
         return $classes;
     }
 }
-

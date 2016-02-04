@@ -6,10 +6,11 @@ add_action('init', '\LobbyKit\Intra\Setup::register_menues');
 add_filter('nav_menu_css_class', '\LobbyKit\Intra\Setup::special_nav_class', 10, 2);
 add_action('after_setup_theme', '\LobbyKit\Intra\Setup::theme_setup');
 
-add_filter( 'papi/settings/directories', function ( $directories ) {
-    $directories[] = dirname( dirname(__FILE__) ) . '/page-types';
+add_filter('papi/settings/directories', function ($directories) {
+    $directories[] = dirname(dirname(__FILE__)).'/page-types';
+
     return $directories;
-} );
+});
 
 add_action('wp_ajax_nopriv_login', '\LobbyKit\Intra\Authentications\Login::ajax');
 add_action('wp_ajax_nopriv_forgot', '\LobbyKit\Intra\Authentications\Forgot::ajax');

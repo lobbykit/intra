@@ -1,4 +1,5 @@
 <?php
+
 namespace LobbyKit\Intra\Authentications;
 
 class Forgot
@@ -23,11 +24,10 @@ class Forgot
                 $result['success'] = false;
                 $result['message'] = __('Sorry! Given credentials are not correct.', 'intra');
             } else {
-
-            	$token = md5(uniqid(rand(), true));
-                $subject = __('Login link','intra');
-                $message = __('Login link required. This can only be used once.<br/>','intra');
-                $link = admin_url('admin-ajax.php') . '?action=forgot&id=' . $user->ID . '&nonce=' . $nonce . '&token=' . $token;
+                $token = md5(uniqid(rand(), true));
+                $subject = __('Login link', 'intra');
+                $message = __('Login link required. This can only be used once.<br/>', 'intra');
+                $link = admin_url('admin-ajax.php').'?action=forgot&id='.$user->ID.'&nonce='.$nonce.'&token='.$token;
                 $message .= $link;
 
                 $mail = new \LobbyKit\Intra\Mandrill();
