@@ -11,8 +11,8 @@
                             <h4 class="title">
             Stats
         </h4>
-                            <p class="title-description"> Website metrics for <a href="http://modularteam.github.io/modularity-free-admin-dashboard-theme-html/">
-                your awesome project
+                            <p class="title-description"> LobbyKit, <a href="http://modularteam.github.io/modularity-free-admin-dashboard-theme-html/">
+                your awesome Intranet
             </a> </p>
                         </div>
                         <div class="row row-sm stats-container">

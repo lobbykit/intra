@@ -41,9 +41,11 @@
         </ul>
         <footer>
             <ul>
-                <li> <a href="">
-View All
-</a> </li>
+                <li>
+                    <a href="">
+                        <?=__('View All','intra')?>
+                    </a> 
+                </li>
             </ul>
         </footer>
     </div>

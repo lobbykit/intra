@@ -9,6 +9,11 @@ class Setup
         add_filter('pre_http_request', '\LobbyKit\Intra\Setup::wp_api_block_request', 10, 3);
         add_action('init', '\LobbyKit\Intra\Setup::register_menues');
         add_filter('nav_menu_css_class', '\LobbyKit\Intra\Setup::special_nav_class', 10, 2);
+        add_action('after_setup_theme', '\LobbyKit\Intra\Setup::theme_setup');
+    }
+
+    static function theme_setup(){
+        load_theme_textdomain('intra', get_template_directory() . '/languages');
     }
 
     /**

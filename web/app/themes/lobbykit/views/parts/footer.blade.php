@@ -6,7 +6,7 @@
     </div>
     <div class="footer-block author">
         <ul>
-            <li> Design by <a href="https://github.com/modularcode">ModularCode</a> </li>
+            <li> <?=__('Design by <a href="https://github.com/modularcode">ModularCode</a>','intra')?> </li>
         </ul>
     </div>
 </footer>

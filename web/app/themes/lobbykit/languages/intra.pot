@@ -1,0 +1,155 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: LobbyKit\n"
+"POT-Creation-Date: 2016-02-04 18:44+0100\n"
+"PO-Revision-Date: 2016-02-04 17:39+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: functions.php:12
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr ""
+
+#: lib/Assets.php:38
+msgid "Please, wait for response..."
+msgstr ""
+
+#: lib/Authentications.php:29 lib/Authentications.php:38
+msgid "Sorry! Given credentials is not correct."
+msgstr ""
+
+#: lib/Authentications.php:41
+msgid "Welcome! We will now start redirecting you..."
+msgstr ""
+
+#: lib/Setup.php:34
+msgid "Sidebar Authorized"
+msgstr ""
+
+#: lib/Setup.php:35
+msgid "Sidebar Unauthorized"
+msgstr ""
+
+#: lib/Setup.php:36
+msgid "Footer Menu"
+msgstr ""
+
+#: views/modals/login.blade.php:9 views/modals/login.blade.php:47
+#: views/parts/login-button.blade.php:6
+msgid "Login"
+msgstr ""
+
+#: views/modals/login.blade.php:29
+msgid "Email"
+msgstr ""
+
+#: views/modals/login.blade.php:30
+msgid "Your Email address"
+msgstr ""
+
+#: views/modals/login.blade.php:34
+msgid "Password"
+msgstr ""
+
+#: views/modals/login.blade.php:35
+msgid "Your secret password"
+msgstr ""
+
+#: views/modals/login.blade.php:40
+msgid "Remember me"
+msgstr ""
+
+#: views/modals/login.blade.php:42
+msgid "Forgot password?"
+msgstr ""
+
+#: views/modals/login.blade.php:50
+msgid "New account"
+msgstr ""
+
+#: views/modals/login.blade.php:54
+msgid "Slack account"
+msgstr ""
+
+#: views/modals/login.blade.php:61
+msgid "Alternative login via Slack code"
+msgstr ""
+
+#: views/modals/login.blade.php:62
+msgid "A generated Slack code"
+msgstr ""
+
+#: views/modals/login.blade.php:65
+msgid "Slack Login"
+msgstr ""
+
+#: views/parts/footer.blade.php:9
+msgid "Design by <a href=\"https://github.com/modularcode\">ModularCode</a>"
+msgstr ""
+
+#: views/parts/notifications.blade.php:46
+msgid "View All"
+msgstr ""
+
+#: views/parts/profile-dropdown.blade.php:17
+msgid "Edit content"
+msgstr ""
+
+#: views/parts/profile-dropdown.blade.php:19
+msgid "WP-Admin"
+msgstr ""
+
+#: views/parts/profile-dropdown.blade.php:22
+msgid "Profile"
+msgstr ""
+
+#: views/parts/profile-dropdown.blade.php:23
+msgid "Notifications"
+msgstr ""
+
+#: views/parts/profile-dropdown.blade.php:24
+msgid "Settings"
+msgstr ""
+
+#: views/parts/profile-dropdown.blade.php:26
+msgid "Logout"
+msgstr ""
+
+#: views/parts/searchform.blade.php:6
+msgid "Search"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "LobbyKit"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.lobbykit.io"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Intranet based on WordPress and open source components/services only"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "EkAndreas"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.aekab.se/"
+msgstr ""
