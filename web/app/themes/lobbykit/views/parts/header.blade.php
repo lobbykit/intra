@@ -1,3 +1,6 @@
+<!--
+### LobbyKit Bladerunner View: views.parts.header
+-->
 <header class="header">
     <div class="header-block header-block-collapse hidden-lg-up">
         <button class="collapse-btn" id="sidebar-collapse-btn"> <i class="fa fa-bars"></i> </button>

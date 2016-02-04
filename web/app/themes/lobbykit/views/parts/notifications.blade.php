@@ -1,3 +1,6 @@
+<!--
+### LobbyKit Bladerunner View: views.parts.notifications
+-->
 <li class="notifications new">
     <a href="" data-toggle="dropdown"> <i class="fa fa-bell-o"></i> 
     <sup>

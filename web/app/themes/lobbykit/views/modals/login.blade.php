@@ -1,3 +1,6 @@
+<!--
+### LobbyKit Bladerunner View: views.modals.login
+-->
 <div class="modal fade" id="login-modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -21,8 +24,7 @@
                     
                     <div class="form-group">
                         <label for="remember">
-                            <input class="checkbox" id="remember" type="checkbox" />
-                            <span>{{ __('Remember me','intra') }}</span>
+                            <input class="checkbox" id="remember" type="checkbox" /> <span>{{ __('Remember me','intra') }}</span>
                         </label> 
                         <a href="#" class="forgot-btn pull-right">{{ __('Forgot password?','intra') }}</a>
                     </div>

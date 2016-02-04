@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+    @yield('stamp')
     @include('views.parts.head')
 
     <body {{ body_class() }}>
