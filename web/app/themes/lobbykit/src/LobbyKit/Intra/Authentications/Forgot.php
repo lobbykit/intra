@@ -26,10 +26,10 @@ class Forgot
             } else {
                 $token = md5(uniqid(rand(), true));
                 update_user_meta($user->ID, 'login_token', $token);
-                $subject = __('Login link to ', 'intra') . get_bloginfo('title');
+                $subject = __('Login link to ', 'intra').get_bloginfo('title');
                 $message = __('Login link requested. This can only be used once.<br/>', 'intra');
                 $link = admin_url('admin-ajax.php').'?action=forgot_request&id='.$user->ID.'&nonce='.$nonce.'&token='.$token;
-                $message .= '<p><a href="' . $link . '">' . __('Secret Login Link', 'intra') . '</a></p>';
+                $message .= '<p><a href="'.$link.'">'.__('Secret Login Link', 'intra').'</a></p>';
 
                 $mail = new \LobbyKit\Intra\Mandrill();
                 $mail->setBody($message);
@@ -62,12 +62,12 @@ class Forgot
                 wp_logout();
             }
 
-            $id = (int)($_REQUEST['id']);
+            $id = (int) ($_REQUEST['id']);
 
             if ($id) {
-                $token=$_REQUEST['token'];
-                $user_token=get_user_meta($id, 'login_token', true);
-                if ($user_token==$token) {
+                $token = $_REQUEST['token'];
+                $user_token = get_user_meta($id, 'login_token', true);
+                if ($user_token == $token) {
                     wp_clear_auth_cookie();
                     wp_set_current_user($id);
                     wp_set_auth_cookie($id);
