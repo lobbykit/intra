@@ -2,7 +2,6 @@
 
 class Theme_Options_Type extends Papi_Option_Type
 {
-
     public function meta()
     {
         return [
@@ -16,43 +15,43 @@ class Theme_Options_Type extends Papi_Option_Type
         $this->box(__('Authentication', 'intra'), [
 
             papi_property([
-                'slug' => 'login_message',
+                'slug'  => 'login_message',
                 'title' => __('Login Message', 'intra'),
-                'type' => 'text',
+                'type'  => 'text',
             ]),
 
             papi_property([
-                'slug' => 'forgot_message',
+                'slug'  => 'forgot_message',
                 'title' => __('Forgot Message', 'intra'),
-                'type' => 'text',
+                'type'  => 'text',
             ]),
 
             papi_property([
-                'slug' => 'register_message',
+                'slug'  => 'register_message',
                 'title' => __('Register Message', 'intra'),
-                'type' => 'text',
+                'type'  => 'text',
             ]),
 
             papi_property([
-                
-                'slug' => 'register_page',
-                'title' => __('Register page', 'intra'),
-                'type' => 'post',
+
+                'slug'     => 'register_page',
+                'title'    => __('Register page', 'intra'),
+                'type'     => 'post',
                 'settings' => [
                     'placeholder' => __('No register page set!', 'intra'),
-                    'post_type' => 'page',
+                    'post_type'   => 'page',
                 ],
 
             ]),
 
             papi_property([
-                
-                'slug' => 'profile_page',
-                'title' => __('Profile page', 'intra'),
-                'type' => 'post',
+
+                'slug'     => 'profile_page',
+                'title'    => __('Profile page', 'intra'),
+                'type'     => 'post',
                 'settings' => [
                     'placeholder' => __('No profile page set!', 'intra'),
-                    'post_type' => 'page',
+                    'post_type'   => 'page',
                 ],
 
             ]),
@@ -62,19 +61,19 @@ class Theme_Options_Type extends Papi_Option_Type
         $this->box(__('Mandrill settings', 'intra'), [
 
             papi_property([
-                'slug' => 'mandrill_from_name',
+                'slug'  => 'mandrill_from_name',
                 'title' => __('From Name', 'intra'),
-                'type' => 'string',
+                'type'  => 'string',
             ]),
             papi_property([
-                'slug' => 'mandrill_from',
+                'slug'  => 'mandrill_from',
                 'title' => __('From Email', 'intra'),
-                'type' => 'string',
+                'type'  => 'string',
             ]),
             papi_property([
-                'slug' => 'mandrill_key',
+                'slug'  => 'mandrill_key',
                 'title' => __('Secret Key', 'intra'),
-                'type' => 'string',
+                'type'  => 'string',
             ]),
 
         ]);

@@ -1,9 +1,9 @@
 <?php
+
 namespace LobbyKit\Intra;
 
 class Assets
 {
-
     public static function get($file)
     {
         return get_stylesheet_directory_uri().'/assets/'.$file;
