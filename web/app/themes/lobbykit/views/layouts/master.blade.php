@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en">
     @include('views.parts.head')
+
     <body {{ body_class() }}>
-        <div class="wrapper">
-            @include('views.parts.sidebar')
-            <div class="main-panel">
-                @include('views.parts.navbar')
-                <div class="content">
-                    <div class="container-fluid">
-                        @yield('main')
-                    </div>
-                </div>
+
+        <div class="main-wrapper">
+            <div class="app" id="app">
+                @include('views.parts.header')
+                @include('views.parts.sidebar')
+                @include('views.parts.sidebar-overlay')
+                @yield('contents')
                 @include('views.parts.footer')
+                @include('views.parts.modals')
             </div>
         </div>
+
+        @include('views.parts.scripts')
     </body>
-    @include('views.parts.scripts')
 </html>
