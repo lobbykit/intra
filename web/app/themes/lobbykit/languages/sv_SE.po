@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-04 23:16+0100\n"
-"PO-Revision-Date: 2016-02-04 23:16+0100\n"
+"POT-Creation-Date: 2016-02-05 00:15+0100\n"
+"PO-Revision-Date: 2016-02-05 00:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -20,51 +20,51 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: page-types/ThemeOptions.php:16
+#: page-types/ThemeOptions.php:15
 msgid "Authentication"
 msgstr "Autentisering"
 
-#: page-types/ThemeOptions.php:20
+#: page-types/ThemeOptions.php:19
 msgid "Login Message"
 msgstr "Inloggningsmeddelande"
 
-#: page-types/ThemeOptions.php:26
+#: page-types/ThemeOptions.php:25
 msgid "Forgot Message"
 msgstr "Glömt lösenord -meddelande"
 
-#: page-types/ThemeOptions.php:32
+#: page-types/ThemeOptions.php:31
 msgid "Register Message"
 msgstr "Registreringsmeddelande"
 
-#: page-types/ThemeOptions.php:39
+#: page-types/ThemeOptions.php:38
 msgid "Register page"
 msgstr "Registreringssida"
 
-#: page-types/ThemeOptions.php:42
+#: page-types/ThemeOptions.php:41
 msgid "No register page set!"
 msgstr "Registreringssida ej vald!"
 
-#: page-types/ThemeOptions.php:51
+#: page-types/ThemeOptions.php:50
 msgid "Profile page"
 msgstr "Profilsida"
 
-#: page-types/ThemeOptions.php:54
+#: page-types/ThemeOptions.php:53
 msgid "No profile page set!"
 msgstr "Profilsida ej vald!"
 
-#: page-types/ThemeOptions.php:62
+#: page-types/ThemeOptions.php:61
 msgid "Mandrill settings"
 msgstr "Inställningar Mandrill"
 
-#: page-types/ThemeOptions.php:66
+#: page-types/ThemeOptions.php:65
 msgid "From Name"
 msgstr "Namn (från)"
 
-#: page-types/ThemeOptions.php:71
+#: page-types/ThemeOptions.php:70
 msgid "From Email"
 msgstr "E-post (från)"
 
-#: page-types/ThemeOptions.php:76
+#: page-types/ThemeOptions.php:75
 msgid "Secret Key"
 msgstr "Hemlig nyckel"
 
@@ -72,19 +72,36 @@ msgstr "Hemlig nyckel"
 msgid "Please, wait for response..."
 msgstr "Vänta på svar…"
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:11
-#: src/LobbyKit/Intra/Authentications/Register.php:11
-msgid "NONO!"
-msgstr "NEJ NEJ!"
-
-#: src/LobbyKit/Intra/Authentications/Login.php:23
-#: src/LobbyKit/Intra/Authentications/Login.php:32
+#: src/LobbyKit/Intra/Authentications/Forgot.php:25
+#: src/LobbyKit/Intra/Authentications/Login.php:24
+#: src/LobbyKit/Intra/Authentications/Login.php:33
 msgid "Sorry! Given credentials are not correct."
 msgstr "Ledsen men angivna uppgifter är inte korrekta."
 
-#: src/LobbyKit/Intra/Authentications/Login.php:35
+#: src/LobbyKit/Intra/Authentications/Forgot.php:29
+msgid "Login link to "
+msgstr "Logga in till "
+
+#: src/LobbyKit/Intra/Authentications/Forgot.php:30
+msgid "Login link requested. This can only be used once.<br/>"
+msgstr ""
+"Inloggningslänk efterfrågad. Denna länk kan bara användas en gång.<br/>"
+
+#: src/LobbyKit/Intra/Authentications/Forgot.php:32
+msgid "Secret Login Link"
+msgstr "Hemlig inloggningslänk"
+
+#: src/LobbyKit/Intra/Authentications/Forgot.php:44
+msgid "Login link sent. Check your inbox!"
+msgstr "Inloggningslänk är skickad. Kolla din inkorg!"
+
+#: src/LobbyKit/Intra/Authentications/Login.php:36
 msgid "Welcome! We will now start redirecting you..."
 msgstr "Välkommen! Vi slussar dig vidare…"
+
+#: src/LobbyKit/Intra/Authentications/Register.php:12
+msgid "NONO!"
+msgstr "NEJ NEJ!"
 
 #: src/LobbyKit/Intra/Setup.php:27
 msgid "Sidebar Authorized"
