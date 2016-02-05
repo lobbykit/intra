@@ -71,18 +71,14 @@ class Papi
         return $result;
     }
 
-    public static function render_modules($property_slug)
-    {
-        $relations = papi_get_field($property_slug);
-        if ($relations) {
-            foreach ($relations as $key => $relation) {
-                $blade_template = rtrim(papi_get_page_type_template($relation->ID), '.php');
-
-                $view = view($blade_template, ['module' => papi_get_page($relation->ID)]);
-                $pathToCompiled = $view->path;
-
-                include $pathToCompiled;
-            }
+    public static function render_page() {
+        $page_template = papi_get_page_type_template();
+        if ($page_template) {
+            $page_template = rtrim($page_template, '.php');
+            bladerunner($page_template);
+        } else {
+            bladerunner('views.pages.index');
         }
     }
+
 }

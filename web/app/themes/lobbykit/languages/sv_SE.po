@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-05 11:35+0100\n"
-"PO-Revision-Date: 2016-02-05 11:35+0100\n"
+"POT-Creation-Date: 2016-02-05 14:37+0100\n"
+"PO-Revision-Date: 2016-02-05 14:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -69,9 +69,74 @@ msgstr "Epostmeddelande välkommen"
 msgid "Email text when user gets new welcome mail"
 msgstr "Eposttext när en användare blivit ny medlem"
 
-#: page-types/ThemeOptions.php:20
+#: page-types/Modules/DummyCountries.php:8
+msgid "Dummy Countries"
+msgstr "Dummy Land"
+
+#: page-types/Modules/DummyCountries.php:9
+#: page-types/Modules/DummyHistory.php:9 page-types/Modules/DummyItems.php:9
+#: page-types/Modules/DummySales.php:9 page-types/Modules/DummyStats.php:9
+#: page-types/Modules/DummyTasks.php:9
+msgid "..."
+msgstr "…"
+
+#: page-types/Modules/DummyHistory.php:8
+msgid "Dummy History"
+msgstr ""
+
+#: page-types/Modules/DummyItems.php:8
+msgid "Dummy Items"
+msgstr ""
+
+#: page-types/Modules/DummySales.php:8
+msgid "Dummy Sales"
+msgstr ""
+
+#: page-types/Modules/DummyStats.php:8
+msgid "Dummy Stats"
+msgstr ""
+
+#: page-types/Modules/DummyTasks.php:8
+msgid "Dummy Tasks"
+msgstr ""
+
+#: page-types/Pages/Article.php:8
+msgid "Article page"
+msgstr "Artikelsida"
+
+#: page-types/Pages/Article.php:9
+msgid "Simple text and modules under"
+msgstr "Enkel text med moduler under"
+
+#: page-types/Pages/Article.php:24 page-types/Pages/Article.php:27
+#: page-types/Pages/Modules.php:25 page-types/Pages/Modules.php:28
+#: src/PostTypes.php:15 src/PostTypes.php:17 src/PostTypes.php:38
+msgid "Modules"
+msgstr "Moduler"
+
+#: page-types/Pages/Article.php:28
+msgid "Modules to display on page under the content"
+msgstr "Moduler att visa under sidans innehåll"
+
+#: page-types/Pages/Modules.php:8
+msgid "Module page"
+msgstr "Modulsida"
+
+#: page-types/Pages/Modules.php:9
+msgid "Simple page with modules"
+msgstr "Enkel sida med moduler"
+
+#: page-types/Pages/Modules.php:29
+msgid "Modules to display on page"
+msgstr "Moduler att visa på sida"
+
+#: page-types/Pages/Profile.php:8 page-types/ThemeOptions.php:20
 msgid "Profile page"
 msgstr "Profilsida"
+
+#: page-types/Pages/Profile.php:9
+msgid "A page to edit the current logged in profile"
+msgstr "En sida för att ändra inloggad persons profil"
 
 #: page-types/ThemeOptions.php:23
 msgid "No profile page set!"
@@ -146,6 +211,74 @@ msgstr ""
 #: src/Authentications/Register.php:85
 msgid "Not possible to create an account with the data given."
 msgstr "Inte möjligt att skapa konto med uppgifterna nedan."
+
+#: src/PostTypes.php:16 src/PostTypes.php:18 src/PostTypes.php:37
+msgid "Module"
+msgstr "Modul"
+
+#: src/PostTypes.php:19
+msgid "Create new"
+msgstr "Skapa ny"
+
+#: src/PostTypes.php:20
+msgid "Create new Module"
+msgstr "Skapa ny modul"
+
+#: src/PostTypes.php:21
+msgid "Edit Module"
+msgstr "Ändra modul"
+
+#: src/PostTypes.php:22
+msgid "New Module"
+msgstr "Ny modul"
+
+#: src/PostTypes.php:23
+msgid "Show Module"
+msgstr "Visa modul"
+
+#: src/PostTypes.php:24
+msgid "Search Module"
+msgstr "Sök modul"
+
+#: src/PostTypes.php:25
+msgid "No Modules found"
+msgstr "Inga moduler funna"
+
+#: src/PostTypes.php:26
+msgid "No Modules in trash"
+msgstr "Inga moduler i papperskorgen"
+
+#: src/PostTypes.php:27
+msgid "Module parent:"
+msgstr "Modulförälder:"
+
+#: src/PostTypes.php:28
+msgid "All Modules"
+msgstr "Alla moduler"
+
+#: src/PostTypes.php:29
+msgid "Module Archive"
+msgstr "Modularkiv"
+
+#: src/PostTypes.php:30
+msgid "Add in Module"
+msgstr "Lägg till modul"
+
+#: src/PostTypes.php:31
+msgid "Uploaded to Module"
+msgstr "Uppladdat till modul"
+
+#: src/PostTypes.php:32
+msgid "Filter Module list"
+msgstr "Filterera moduler"
+
+#: src/PostTypes.php:33
+msgid "Navigate list"
+msgstr "Navigeringslista"
+
+#: src/PostTypes.php:34
+msgid "Module list"
+msgstr "Modullista"
 
 #: src/Setup.php:27
 msgid "Sidebar Authorized"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-05 11:34+0100\n"
+"POT-Creation-Date: 2016-02-05 14:37+0100\n"
 "PO-Revision-Date: 2016-02-04 17:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -69,8 +69,73 @@ msgstr ""
 msgid "Email text when user gets new welcome mail"
 msgstr ""
 
-#: page-types/ThemeOptions.php:20
+#: page-types/Modules/DummyCountries.php:8
+msgid "Dummy Countries"
+msgstr ""
+
+#: page-types/Modules/DummyCountries.php:9
+#: page-types/Modules/DummyHistory.php:9 page-types/Modules/DummyItems.php:9
+#: page-types/Modules/DummySales.php:9 page-types/Modules/DummyStats.php:9
+#: page-types/Modules/DummyTasks.php:9
+msgid "..."
+msgstr ""
+
+#: page-types/Modules/DummyHistory.php:8
+msgid "Dummy History"
+msgstr ""
+
+#: page-types/Modules/DummyItems.php:8
+msgid "Dummy Items"
+msgstr ""
+
+#: page-types/Modules/DummySales.php:8
+msgid "Dummy Sales"
+msgstr ""
+
+#: page-types/Modules/DummyStats.php:8
+msgid "Dummy Stats"
+msgstr ""
+
+#: page-types/Modules/DummyTasks.php:8
+msgid "Dummy Tasks"
+msgstr ""
+
+#: page-types/Pages/Article.php:8
+msgid "Article page"
+msgstr ""
+
+#: page-types/Pages/Article.php:9
+msgid "Simple text and modules under"
+msgstr ""
+
+#: page-types/Pages/Article.php:24 page-types/Pages/Article.php:27
+#: page-types/Pages/Modules.php:25 page-types/Pages/Modules.php:28
+#: src/PostTypes.php:15 src/PostTypes.php:17 src/PostTypes.php:38
+msgid "Modules"
+msgstr ""
+
+#: page-types/Pages/Article.php:28
+msgid "Modules to display on page under the content"
+msgstr ""
+
+#: page-types/Pages/Modules.php:8
+msgid "Module page"
+msgstr ""
+
+#: page-types/Pages/Modules.php:9
+msgid "Simple page with modules"
+msgstr ""
+
+#: page-types/Pages/Modules.php:29
+msgid "Modules to display on page"
+msgstr ""
+
+#: page-types/Pages/Profile.php:8 page-types/ThemeOptions.php:20
 msgid "Profile page"
+msgstr ""
+
+#: page-types/Pages/Profile.php:9
+msgid "A page to edit the current logged in profile"
 msgstr ""
 
 #: page-types/ThemeOptions.php:23
@@ -142,6 +207,74 @@ msgstr ""
 
 #: src/Authentications/Register.php:85
 msgid "Not possible to create an account with the data given."
+msgstr ""
+
+#: src/PostTypes.php:16 src/PostTypes.php:18 src/PostTypes.php:37
+msgid "Module"
+msgstr ""
+
+#: src/PostTypes.php:19
+msgid "Create new"
+msgstr ""
+
+#: src/PostTypes.php:20
+msgid "Create new Module"
+msgstr ""
+
+#: src/PostTypes.php:21
+msgid "Edit Module"
+msgstr ""
+
+#: src/PostTypes.php:22
+msgid "New Module"
+msgstr ""
+
+#: src/PostTypes.php:23
+msgid "Show Module"
+msgstr ""
+
+#: src/PostTypes.php:24
+msgid "Search Module"
+msgstr ""
+
+#: src/PostTypes.php:25
+msgid "No Modules found"
+msgstr ""
+
+#: src/PostTypes.php:26
+msgid "No Modules in trash"
+msgstr ""
+
+#: src/PostTypes.php:27
+msgid "Module parent:"
+msgstr ""
+
+#: src/PostTypes.php:28
+msgid "All Modules"
+msgstr ""
+
+#: src/PostTypes.php:29
+msgid "Module Archive"
+msgstr ""
+
+#: src/PostTypes.php:30
+msgid "Add in Module"
+msgstr ""
+
+#: src/PostTypes.php:31
+msgid "Uploaded to Module"
+msgstr ""
+
+#: src/PostTypes.php:32
+msgid "Filter Module list"
+msgstr ""
+
+#: src/PostTypes.php:33
+msgid "Navigate list"
+msgstr ""
+
+#: src/PostTypes.php:34
+msgid "Module list"
 msgstr ""
 
 #: src/Setup.php:27

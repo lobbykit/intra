@@ -10,6 +10,13 @@
                 @include('views.parts.header')
                 @include('views.parts.sidebar')
                 @yield('contents')
+
+                <div class="row">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div>
+
                 @include('views.parts.footer')
                 @if( !is_user_logged_in() )
                     @include('views.modals.login')

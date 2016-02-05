@@ -1,5 +1,6 @@
 <?php
 
+add_action('init', 'LobbyKit\Intra\PostTypes::register');
 add_action('wp_enqueue_scripts', 'LobbyKit\Intra\Assets::enqueueScripts');
 add_filter('pre_http_request', 'LobbyKit\Intra\Setup::wp_api_block_request', 10, 3);
 add_action('init', 'LobbyKit\Intra\Setup::register_menues');
