@@ -40,7 +40,8 @@
     "wpackagist-plugin/menu-icons": "*",
     "mandrill/mandrill": "*",
     "johnbillion/extended-cpts":"*",
-    "wpackagist-plugin/ninja-forms": "*"
+    "wpackagist-plugin/ninja-forms": "*",
+    "wpackagist-plugin/contact-form-7": "*"
   },
   "extra": {
     "installer-paths": {
