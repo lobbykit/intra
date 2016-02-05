@@ -19,6 +19,6 @@ add_action('wp_ajax_nopriv_register', 'LobbyKit\Intra\Authentications\Register::
 
 add_action('phpmailer_init', 'LobbyKit\Intra\Mandrill::initPHPMailer');
 
-add_filter( 'wp_mail_content_type', function( $content_type ) {
-	return 'text/html';
+add_filter('wp_mail_content_type', function ($content_type) {
+    return 'text/html';
 });

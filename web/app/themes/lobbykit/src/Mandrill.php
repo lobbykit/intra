@@ -54,7 +54,7 @@ class Mandrill
      */
     public function setBody($body)
     {
-        $this->body = str_replace("\n", "<br/>", $body);
+        $this->body = str_replace("\n", '<br/>', $body);
         $this->text = substr(strip_tags($body), 0, 100);
     }
 
