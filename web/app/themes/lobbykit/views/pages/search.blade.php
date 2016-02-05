@@ -10,7 +10,11 @@
 @endsection
 
 @section('contents')
-	@include('views.contents.search')
+	@if(is_user_logged_in())
+		@include('views.contents.search')
+	@else
+		@include('views.contents.unauthorized')
+	@endif
 @endsection
 
 @section('scripts')
