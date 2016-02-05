@@ -38,7 +38,8 @@
     "wpackagist-plugin/use-any-font": "*",
     "wpackagist-plugin/groups": "*",
     "wpackagist-plugin/menu-icons": "*",
-    "mandrill/mandrill": "*"
+    "mandrill/mandrill": "*",
+    "johnbillion/extended-cpts":"*"
   },
   "extra": {
     "installer-paths": {
@@ -51,5 +52,13 @@
   "require-dev": {
     "ekandreas/docker-bedrock": "*",
     "deployer/deployer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "LobbyKit\\Intra\\": "web/app/themes/lobbykit/src/"
+    },
+    "files": [
+      "vendor/johnbillion/extended-cpts/extended-cpts.php"
+    ]
   }
 }

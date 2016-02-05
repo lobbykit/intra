@@ -96,4 +96,19 @@ class Mandrill
     {
         return $this->result;
     }
+
+    public static function initPHPMailer($phpmailer)
+    {
+        $phpmailer->isSMTP();
+        $phpmailer->SMTPAuth = true;
+        $phpmailer->SMTPSecure = "tls";
+        $phpmailer->Host = "smtp.mandrillapp.com";
+        $phpmailer->Port = "587";
+        $phpmailer->Username = papi_get_option("mandrill_from");
+        $phpmailer->Password = papi_get_option("mandrill_key");
+        $from_name = get_bloginfo('title');
+        $from_email = get_bloginfo('admin_email');
+        $phpmailer->From = $from_email;
+        $phpmailer->FromName = $from_name;
+    }
 }

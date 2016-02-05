@@ -1,0 +1,8 @@
+{
+  "name": "lobbykit/intra",
+  "autoload": {
+    "psr-4": {
+      "LobbyKit\\": "src/"
+    }
+  }
+}
