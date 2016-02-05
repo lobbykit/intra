@@ -1,2 +1,2 @@
 <?php
-	LobbyKit\Intra\Papi::render_page();
+    LobbyKit\Intra\Papi::render_page();

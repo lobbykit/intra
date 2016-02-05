@@ -1,4 +1,5 @@
 <?php
+
 class Article_Page_Type extends Papi_Page_Type
 {
     public function meta()
@@ -18,16 +19,16 @@ class Article_Page_Type extends Papi_Page_Type
             'commentstatusdiv',
         ];
     }
-    
+
     public function register()
     {
         $this->box(__('Modules', 'intra'), [
             papi_property([
-                'slug' => 'modules',
-                'title' => __('Modules', 'intra'),
+                'slug'        => 'modules',
+                'title'       => __('Modules', 'intra'),
                 'description' => __('Modules to display on page under the content', 'intra'),
-                'type'  => 'relationship',
-                'settings' => [
+                'type'        => 'relationship',
+                'settings'    => [
                     'post_type' => 'module',
                 ],
             ]),

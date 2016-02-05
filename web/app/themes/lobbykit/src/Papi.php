@@ -71,7 +71,8 @@ class Papi
         return $result;
     }
 
-    public static function render_page() {
+    public static function render_page()
+    {
         $page_template = papi_get_page_type_template();
         if ($page_template) {
             $page_template = rtrim($page_template, '.php');
@@ -80,5 +81,4 @@ class Papi
             bladerunner('views.pages.index');
         }
     }
-
 }

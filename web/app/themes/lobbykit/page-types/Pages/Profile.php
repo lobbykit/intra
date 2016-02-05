@@ -1,4 +1,5 @@
 <?php
+
 class Profile_Page_Type extends Papi_Page_Type
 {
     public function meta()
@@ -18,7 +19,7 @@ class Profile_Page_Type extends Papi_Page_Type
             'commentstatusdiv',
         ];
     }
-    
+
     public function register()
     {
     }
