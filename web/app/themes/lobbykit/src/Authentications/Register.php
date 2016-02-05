@@ -26,7 +26,7 @@ class Register
             $display_name = esc_attr($_REQUEST['display_name']);
 
             if (!$display_name ||
-                strlen($display_name)<3 ||
+                strlen($display_name) < 3 ||
                 !strpos($display_name, ' ')) {
                 $result['success'] = false;
                 $result['message'] = __('Please ensure first name and last name!', 'intra');
@@ -35,7 +35,7 @@ class Register
             }
 
             $password = esc_attr($_REQUEST['password']);
-            if (strlen($password)<6) {
+            if (strlen($password) < 6) {
                 $result['success'] = false;
                 $result['message'] = __('Password needs to be at least 6 letters or digits long.', 'intra');
                 echo json_encode($result);
@@ -60,10 +60,10 @@ class Register
 
                 $name = explode(' ', $display_name);
                 $user_data = [
-                    'ID' => $user_id,
+                    'ID'           => $user_id,
                     'display_name' => $display_name,
-                    'first_name' => isset($name[0]) ? $name[0] : $display_name,
-                    'last_name' => isset($name[1]) ? $name[1] : '',
+                    'first_name'   => isset($name[0]) ? $name[0] : $display_name,
+                    'last_name'    => isset($name[1]) ? $name[1] : '',
                 ];
                 wp_update_user($user_data);
 
@@ -80,7 +80,6 @@ class Register
                     $mail->setToName($display_name);
                     $mail->setToEmail($email);
                     $mail->send();
-
                 } else {
                     $result['success'] = false;
                     $result['message'] = __('Not possible to create an account with the data given.', 'intra');
@@ -90,7 +89,6 @@ class Register
             $result['success'] = false;
             $result['message'] = __("Security error! Try reload the page and try again! (nonce=$nonce)", 'intra');
         }
-
 
         echo json_encode($result);
         exit(0);
