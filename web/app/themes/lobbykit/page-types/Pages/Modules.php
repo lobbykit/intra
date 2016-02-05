@@ -1,4 +1,5 @@
 <?php
+
 class Modules_Page_Type extends Papi_Page_Type
 {
     public function meta()
@@ -19,16 +20,16 @@ class Modules_Page_Type extends Papi_Page_Type
             'editor',
         ];
     }
-    
+
     public function register()
     {
         $this->box(__('Modules', 'intra'), [
             papi_property([
-                'slug' => 'modules',
-                'title' => __('Modules', 'intra'),
+                'slug'        => 'modules',
+                'title'       => __('Modules', 'intra'),
                 'description' => __('Modules to display on page', 'intra'),
-                'type'  => 'relationship',
-                'settings' => [
+                'type'        => 'relationship',
+                'settings'    => [
                     'post_type' => 'module',
                 ],
             ]),

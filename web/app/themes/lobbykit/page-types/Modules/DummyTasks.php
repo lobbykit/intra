@@ -1,4 +1,5 @@
 <?php
+
 class Dummy_Tasks_Module_Type extends Papi_Page_Type
 {
     public function meta()
@@ -19,7 +20,7 @@ class Dummy_Tasks_Module_Type extends Papi_Page_Type
             'editor',
         ];
     }
-    
+
     public function register()
     {
     }

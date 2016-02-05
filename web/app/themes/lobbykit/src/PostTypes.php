@@ -1,4 +1,5 @@
 <?php
+
 namespace LobbyKit\Intra;
 
 class PostTypes
@@ -6,12 +7,12 @@ class PostTypes
     public static function register()
     {
         register_extended_post_type('module', [
-            'has_archive' => false,
-            'show_ui' => true,
+            'has_archive'  => false,
+            'show_ui'      => true,
             'show_in_menu' => 'edit.php?post_type=page',
             'show_in_feed' => false,
-            'supports' => array( 'title', 'thumbnail' ),
-            'labels' => [
+            'supports'     => ['title', 'thumbnail'],
+            'labels'       => [
                 'name'                  => __('Modules', 'intra'),
                 'singular_name'         => __('Module', 'intra'),
                 'menu_name'             => __('Modules', 'intra'),
