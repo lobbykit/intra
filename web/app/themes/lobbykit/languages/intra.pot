@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-05 00:15+0100\n"
+"POT-Creation-Date: 2016-02-05 10:28+0100\n"
 "PO-Revision-Date: 2016-02-04 17:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,97 +20,139 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: page-types/ThemeOptions.php:15
+#: page-types/MessageOptions.php:9
+msgid "Messages"
+msgstr ""
+
+#: page-types/MessageOptions.php:15 page-types/ThemeOptions.php:15
 msgid "Authentication"
 msgstr ""
 
-#: page-types/ThemeOptions.php:19
-msgid "Login Message"
+#: page-types/MessageOptions.php:19 views/modals/login.blade.php:9
+#: views/modals/login.blade.php:47 views/parts/login-button.blade.php:6
+msgid "Login"
 msgstr ""
 
-#: page-types/ThemeOptions.php:25
-msgid "Forgot Message"
+#: page-types/MessageOptions.php:20
+msgid "Shows when the user tries to login to LobbyKit"
 msgstr ""
 
-#: page-types/ThemeOptions.php:31
-msgid "Register Message"
+#: page-types/MessageOptions.php:26
+msgid "Forgot"
 msgstr ""
 
-#: page-types/ThemeOptions.php:38
-msgid "Register page"
+#: page-types/MessageOptions.php:27
+msgid "When the user tries to get a login link"
 msgstr ""
 
-#: page-types/ThemeOptions.php:41
-msgid "No register page set!"
+#: page-types/MessageOptions.php:33 views/modals/register.blade.php:53
+msgid "Register"
 msgstr ""
 
-#: page-types/ThemeOptions.php:50
+#: page-types/MessageOptions.php:34
+msgid "When the user tries to register new account"
+msgstr ""
+
+#: page-types/MessageOptions.php:40
+msgid "New account success"
+msgstr ""
+
+#: page-types/MessageOptions.php:41
+msgid "When a new account is created with the green new message to user"
+msgstr ""
+
+#: page-types/MessageOptions.php:47
+msgid "Email welcome"
+msgstr ""
+
+#: page-types/MessageOptions.php:48
+msgid "Email text when user gets new welcome mail"
+msgstr ""
+
+#: page-types/ThemeOptions.php:20
 msgid "Profile page"
 msgstr ""
 
-#: page-types/ThemeOptions.php:53
+#: page-types/ThemeOptions.php:23
 msgid "No profile page set!"
 msgstr ""
 
-#: page-types/ThemeOptions.php:61
+#: page-types/ThemeOptions.php:31
 msgid "Mandrill settings"
 msgstr ""
 
-#: page-types/ThemeOptions.php:65
+#: page-types/ThemeOptions.php:35
 msgid "From Name"
 msgstr ""
 
-#: page-types/ThemeOptions.php:70
+#: page-types/ThemeOptions.php:40
 msgid "From Email"
 msgstr ""
 
-#: page-types/ThemeOptions.php:75
+#: page-types/ThemeOptions.php:45
 msgid "Secret Key"
 msgstr ""
 
-#: src/LobbyKit/Intra/Assets.php:30
+#: src/Assets.php:30
 msgid "Please, wait for response..."
 msgstr ""
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:25
-#: src/LobbyKit/Intra/Authentications/Login.php:24
-#: src/LobbyKit/Intra/Authentications/Login.php:33
+#: src/Authentications/Forgot.php:25 src/Authentications/Login.php:24
+#: src/Authentications/Login.php:33
 msgid "Sorry! Given credentials are not correct."
 msgstr ""
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:29
+#: src/Authentications/Forgot.php:29
 msgid "Login link to "
 msgstr ""
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:30
+#: src/Authentications/Forgot.php:30
 msgid "Login link requested. This can only be used once.<br/>"
 msgstr ""
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:32
+#: src/Authentications/Forgot.php:32
 msgid "Secret Login Link"
 msgstr ""
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:44
+#: src/Authentications/Forgot.php:44
 msgid "Login link sent. Check your inbox!"
 msgstr ""
 
-#: src/LobbyKit/Intra/Authentications/Login.php:36
+#: src/Authentications/Login.php:36
 msgid "Welcome! We will now start redirecting you..."
 msgstr ""
 
-#: src/LobbyKit/Intra/Authentications/Register.php:12
-msgid "NONO!"
+#: src/Authentications/Register.php:21
+msgid "Email is not acceptable!"
 msgstr ""
 
-#: src/LobbyKit/Intra/Setup.php:27
+#: src/Authentications/Register.php:32
+msgid "Please ensure first name and last name!"
+msgstr ""
+
+#: src/Authentications/Register.php:40
+msgid "Password needs to be at least 6 letters or digits long."
+msgstr ""
+
+#: src/Authentications/Register.php:55
+msgid ""
+"Email address already exists. Use the \"Forgot password\" to get a login "
+"link!"
+msgstr ""
+
+#: src/Authentications/Register.php:86
+msgid "Not possible to create an account with the data given."
+msgstr ""
+
+#: src/Setup.php:27
 msgid "Sidebar Authorized"
 msgstr ""
 
-#: src/LobbyKit/Intra/Setup.php:28
+#: src/Setup.php:28
 msgid "Sidebar Unauthorized"
 msgstr ""
 
-#: src/LobbyKit/Intra/Setup.php:29
+#: src/Setup.php:29
 msgid "Footer Menu"
 msgstr ""
 
@@ -130,11 +172,6 @@ msgstr ""
 
 #: views/modals/forgot.blade.php:33
 msgid "Send login link"
-msgstr ""
-
-#: views/modals/login.blade.php:9 views/modals/login.blade.php:47
-#: views/parts/login-button.blade.php:6
-msgid "Login"
 msgstr ""
 
 #: views/modals/login.blade.php:34 views/modals/register.blade.php:47
@@ -191,10 +228,6 @@ msgstr ""
 
 #: views/modals/register.blade.php:38
 msgid "Your phone number for contact, not required"
-msgstr ""
-
-#: views/modals/register.blade.php:53
-msgid "Register"
 msgstr ""
 
 #: views/parts/footer.blade.php:9

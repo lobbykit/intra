@@ -9,7 +9,7 @@
                 <h4 class="modal-title"><i class="fa fa-sign-in"></i> <?=__('Login','intra')?></h4> 
             </div>
             <div class="modal-body">
-                <p class="text-xs-center">{{ papi_get_option('login_message') }}</p>
+                <p class="text-xs-center">{!! papi_get_option('message_login') !!}</p>
 
                 <?php do_action( 'wordpress_social_login' ); ?>
                     

@@ -9,7 +9,7 @@
                 <h4 class="modal-title"><i class="fa fa-user"></i> <?=__('Register new account','intra')?></h4> 
             </div>
             <div class="modal-body">
-                <p class="text-xs-center">{{ papi_get_option('register_message') }}</p>
+                <p class="text-xs-center">{!! papi_get_option('message_register') !!}</p>
 
                 <div v-show="success" class="alert alert-success" role="alert">
                     @{{{ success }}}
@@ -49,7 +49,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <button v-on:click="register" class="btn btn-primary btn-block">
+                    <button v-on:click="register" class="btn btn-primary btn-block" id="registerSendButton">
                         <i class="fa fa-paper-plane-o"></i> <?=__('Register','intra')?>
                     </button>
                 </div>

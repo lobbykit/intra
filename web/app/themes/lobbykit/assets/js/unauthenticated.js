@@ -170,7 +170,7 @@
               registerVue.warning='';
               if( data.success ) {
                 registerVue.success = data.message;
-                registerVue.reload(); 
+                jQuery('#registerSendButton').hide();
               }
               else {
                 registerVue.error = data.message;

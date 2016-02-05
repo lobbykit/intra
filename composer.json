@@ -39,7 +39,8 @@
     "wpackagist-plugin/groups": "*",
     "wpackagist-plugin/menu-icons": "*",
     "mandrill/mandrill": "*",
-    "johnbillion/extended-cpts":"*"
+    "johnbillion/extended-cpts":"*",
+    "wpackagist-plugin/ninja-forms": "*"
   },
   "extra": {
     "installer-paths": {

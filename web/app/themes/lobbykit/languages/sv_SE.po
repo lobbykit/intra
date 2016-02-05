@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-05 00:15+0100\n"
-"PO-Revision-Date: 2016-02-05 00:16+0100\n"
+"POT-Creation-Date: 2016-02-05 10:28+0100\n"
+"PO-Revision-Date: 2016-02-05 10:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -20,98 +20,142 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: page-types/ThemeOptions.php:15
+#: page-types/MessageOptions.php:9
+msgid "Messages"
+msgstr "Meddelanden"
+
+#: page-types/MessageOptions.php:15 page-types/ThemeOptions.php:15
 msgid "Authentication"
 msgstr "Autentisering"
 
-#: page-types/ThemeOptions.php:19
-msgid "Login Message"
-msgstr "Inloggningsmeddelande"
+#: page-types/MessageOptions.php:19 views/modals/login.blade.php:9
+#: views/modals/login.blade.php:47 views/parts/login-button.blade.php:6
+msgid "Login"
+msgstr "Logga in"
 
-#: page-types/ThemeOptions.php:25
-msgid "Forgot Message"
-msgstr "Glömt lösenord -meddelande"
+#: page-types/MessageOptions.php:20
+msgid "Shows when the user tries to login to LobbyKit"
+msgstr "Visas när en användare försöker logga in till LobbyKit"
 
-#: page-types/ThemeOptions.php:31
-msgid "Register Message"
-msgstr "Registreringsmeddelande"
+#: page-types/MessageOptions.php:26
+msgid "Forgot"
+msgstr "Glömt"
 
-#: page-types/ThemeOptions.php:38
-msgid "Register page"
-msgstr "Registreringssida"
+#: page-types/MessageOptions.php:27
+msgid "When the user tries to get a login link"
+msgstr "När en användare försöker få en inloggningslänk"
 
-#: page-types/ThemeOptions.php:41
-msgid "No register page set!"
-msgstr "Registreringssida ej vald!"
+#: page-types/MessageOptions.php:33 views/modals/register.blade.php:53
+msgid "Register"
+msgstr "Registrera"
 
-#: page-types/ThemeOptions.php:50
+#: page-types/MessageOptions.php:34
+msgid "When the user tries to register new account"
+msgstr "När en användare registrerar nytt konto"
+
+#: page-types/MessageOptions.php:40
+msgid "New account success"
+msgstr "Nytt konto skapades"
+
+#: page-types/MessageOptions.php:41
+msgid "When a new account is created with the green new message to user"
+msgstr "När ett konto är skapat, grön meddelande till användaren"
+
+#: page-types/MessageOptions.php:47
+msgid "Email welcome"
+msgstr "Epostmeddelande välkommen"
+
+#: page-types/MessageOptions.php:48
+msgid "Email text when user gets new welcome mail"
+msgstr "Eposttext när en användare blivit ny medlem"
+
+#: page-types/ThemeOptions.php:20
 msgid "Profile page"
 msgstr "Profilsida"
 
-#: page-types/ThemeOptions.php:53
+#: page-types/ThemeOptions.php:23
 msgid "No profile page set!"
 msgstr "Profilsida ej vald!"
 
-#: page-types/ThemeOptions.php:61
+#: page-types/ThemeOptions.php:31
 msgid "Mandrill settings"
 msgstr "Inställningar Mandrill"
 
-#: page-types/ThemeOptions.php:65
+#: page-types/ThemeOptions.php:35
 msgid "From Name"
 msgstr "Namn (från)"
 
-#: page-types/ThemeOptions.php:70
+#: page-types/ThemeOptions.php:40
 msgid "From Email"
 msgstr "E-post (från)"
 
-#: page-types/ThemeOptions.php:75
+#: page-types/ThemeOptions.php:45
 msgid "Secret Key"
 msgstr "Hemlig nyckel"
 
-#: src/LobbyKit/Intra/Assets.php:30
+#: src/Assets.php:30
 msgid "Please, wait for response..."
 msgstr "Vänta på svar…"
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:25
-#: src/LobbyKit/Intra/Authentications/Login.php:24
-#: src/LobbyKit/Intra/Authentications/Login.php:33
+#: src/Authentications/Forgot.php:25 src/Authentications/Login.php:24
+#: src/Authentications/Login.php:33
 msgid "Sorry! Given credentials are not correct."
 msgstr "Ledsen men angivna uppgifter är inte korrekta."
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:29
+#: src/Authentications/Forgot.php:29
 msgid "Login link to "
 msgstr "Logga in till "
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:30
+#: src/Authentications/Forgot.php:30
 msgid "Login link requested. This can only be used once.<br/>"
 msgstr ""
 "Inloggningslänk efterfrågad. Denna länk kan bara användas en gång.<br/>"
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:32
+#: src/Authentications/Forgot.php:32
 msgid "Secret Login Link"
 msgstr "Hemlig inloggningslänk"
 
-#: src/LobbyKit/Intra/Authentications/Forgot.php:44
+#: src/Authentications/Forgot.php:44
 msgid "Login link sent. Check your inbox!"
 msgstr "Inloggningslänk är skickad. Kolla din inkorg!"
 
-#: src/LobbyKit/Intra/Authentications/Login.php:36
+#: src/Authentications/Login.php:36
 msgid "Welcome! We will now start redirecting you..."
 msgstr "Välkommen! Vi slussar dig vidare…"
 
-#: src/LobbyKit/Intra/Authentications/Register.php:12
-msgid "NONO!"
-msgstr "NEJ NEJ!"
+#: src/Authentications/Register.php:21
+msgid "Email is not acceptable!"
+msgstr "E-postadressen är inte korrekt!"
 
-#: src/LobbyKit/Intra/Setup.php:27
+#: src/Authentications/Register.php:32
+msgid "Please ensure first name and last name!"
+msgstr "Säkerställ förnamn och efternamn!"
+
+#: src/Authentications/Register.php:40
+msgid "Password needs to be at least 6 letters or digits long."
+msgstr "Lösenord ska vara minst 6 tecken eller siffror långt."
+
+#: src/Authentications/Register.php:55
+msgid ""
+"Email address already exists. Use the \"Forgot password\" to get a login "
+"link!"
+msgstr ""
+"E-postadressen finns redan. Använd “Glömt lösenord” för att få "
+"inloggningslänk!"
+
+#: src/Authentications/Register.php:86
+msgid "Not possible to create an account with the data given."
+msgstr "Inte möjligt att skapa konto med uppgifterna nedan."
+
+#: src/Setup.php:27
 msgid "Sidebar Authorized"
 msgstr "Sidopanel för inloggade"
 
-#: src/LobbyKit/Intra/Setup.php:28
+#: src/Setup.php:28
 msgid "Sidebar Unauthorized"
 msgstr "Sidopanel för icke-inloggade"
 
-#: src/LobbyKit/Intra/Setup.php:29
+#: src/Setup.php:29
 msgid "Footer Menu"
 msgstr "Sidfotsmeny"
 
@@ -132,11 +176,6 @@ msgstr "Din e-postadress"
 #: views/modals/forgot.blade.php:33
 msgid "Send login link"
 msgstr "Skicka inloggingslänk"
-
-#: views/modals/login.blade.php:9 views/modals/login.blade.php:47
-#: views/parts/login-button.blade.php:6
-msgid "Login"
-msgstr "Logga in"
 
 #: views/modals/login.blade.php:34 views/modals/register.blade.php:47
 msgid "Password"
@@ -193,10 +232,6 @@ msgstr "Telefon"
 #: views/modals/register.blade.php:38
 msgid "Your phone number for contact, not required"
 msgstr "Ditt telefonnummer för kontakt, ej obligatoriskt"
-
-#: views/modals/register.blade.php:53
-msgid "Register"
-msgstr "Registrera"
 
 #: views/parts/footer.blade.php:9
 msgid "Design by <a href=\"https://github.com/modularcode\">ModularCode</a>"
@@ -256,6 +291,24 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://www.aekab.se/"
 msgstr ""
+
+#~ msgid "Login Message"
+#~ msgstr "Inloggningsmeddelande"
+
+#~ msgid "Forgot Message"
+#~ msgstr "Glömt lösenord -meddelande"
+
+#~ msgid "Register Message"
+#~ msgstr "Registreringsmeddelande"
+
+#~ msgid "Register page"
+#~ msgstr "Registreringssida"
+
+#~ msgid "No register page set!"
+#~ msgstr "Registreringssida ej vald!"
+
+#~ msgid "NONO!"
+#~ msgstr "NEJ NEJ!"
 
 #~ msgid "Send new login link"
 #~ msgstr "Skicka loginlänk"

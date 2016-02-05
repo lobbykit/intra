@@ -9,7 +9,7 @@
                 <h4 class="modal-title"><i class="fa fa-question"></i> <?=__('Forgotten password','intra')?></h4> 
             </div>
             <div class="modal-body">
-                <p class="text-xs-center">{{ papi_get_option('forgot_message') }}</p>
+                <p class="text-xs-center">{!! papi_get_option('message_forgot') !!}</p>
 
                 <div v-show="success" class="alert alert-success" role="alert">
                     @{{{ success }}}

@@ -20,19 +20,20 @@ class Mandrill
     {
         $mandrill = new \Mandrill(papi_get_option('mandrill_key'));
         $message = [
-            'html'       => $this->body,
-            'text'       => $this->text,
-            'subject'    => $this->subject,
-            'from_email' => papi_get_option('mandrill_from'),
-            'from_name'  => papi_get_option('mandrill_from_name'),
-            'to'         => [
+            'html'          => $this->body,
+            'text'          => $this->text,
+            'auto_html'     => true,
+            'subject'       => $this->subject,
+            'from_email'    => papi_get_option('mandrill_from'),
+            'from_name'     => papi_get_option('mandrill_from_name'),
+            'to'            => [
                 [
                     'email' => $this->to_email,
                     'name'  => $this->to_name,
                     'type'  => 'to',
                 ],
             ],
-            'headers'    => ['Reply-To' => get_bloginfo('admin_email')],
+            'headers'       => ['Reply-To' => get_bloginfo('admin_email')],
         ];
         $async = false;
         try {
@@ -53,7 +54,7 @@ class Mandrill
      */
     public function setBody($body)
     {
-        $this->body = $body;
+        $this->body = str_replace("\n", "<br/>", $body);
         $this->text = substr(strip_tags($body), 0, 100);
     }
 

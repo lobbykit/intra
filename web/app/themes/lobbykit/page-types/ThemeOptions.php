@@ -15,36 +15,6 @@ class Theme_Options_Type extends Papi_Option_Type
         $this->box(__('Authentication', 'intra'), [
 
             papi_property([
-                'slug'  => 'login_message',
-                'title' => __('Login Message', 'intra'),
-                'type'  => 'text',
-            ]),
-
-            papi_property([
-                'slug'  => 'forgot_message',
-                'title' => __('Forgot Message', 'intra'),
-                'type'  => 'text',
-            ]),
-
-            papi_property([
-                'slug'  => 'register_message',
-                'title' => __('Register Message', 'intra'),
-                'type'  => 'text',
-            ]),
-
-            papi_property([
-
-                'slug'     => 'register_page',
-                'title'    => __('Register page', 'intra'),
-                'type'     => 'post',
-                'settings' => [
-                    'placeholder' => __('No register page set!', 'intra'),
-                    'post_type'   => 'page',
-                ],
-
-            ]),
-
-            papi_property([
 
                 'slug'     => 'profile_page',
                 'title'    => __('Profile page', 'intra'),

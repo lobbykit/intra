@@ -71,6 +71,7 @@ class Forgot
                     wp_clear_auth_cookie();
                     wp_set_current_user($id);
                     wp_set_auth_cookie($id);
+                    delete_user_meta($id,'login_token');
                 }
             }
         }
