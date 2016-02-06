@@ -1,7 +1,8 @@
 <?php
+
 return [
-    'title' => 'Main',
-    'description' => 'sasdas',    
+    'title'       => 'Main',
+    'description' => 'sasdas',
     papi_property([
         'slug'        => 'modules',
         'title'       => __('Modules', 'intra'),
