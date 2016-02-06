@@ -14,5 +14,10 @@
 	    	<a class="btn {{ papi_get_field('cta_color') }}" href="{{ $button->url }}" target="{{ $button->target }}">{{ $button->title }}</a>
 	    </div>
 	    @endif
+        @if($edit_url=get_edit_post_link())
+			<div class="card-footer text-muted">
+				<a href="{{ $edit_url }}"><i class="fa fa-pencil-square-o"></i> <?=__('Edit module','intra')?></a>
+			</div>        	
+        @endif
 	</div>
 </div>
