@@ -10,7 +10,7 @@
 @endsection
 
 @section('main')
-	@include('views.contents.single')
+	@include('views.contents.post-card')
 @endsection
 
 @section('scripts')

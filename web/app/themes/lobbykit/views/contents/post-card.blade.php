@@ -3,7 +3,7 @@
         {!! get_the_post_thumbnail(get_the_ID(),'full',['class'=>'card-img-top img-fluid']) !!}
     @endif
     <div class="card-block">
-        <h2 class="display-4">{{ the_title() }}</h1>
+        <h2 class="display-4">{{ the_title() }}</h2>
         <h6 class="card-subtitle text-muted">{{ get_the_date() }} | {{ get_the_author() }}</h6>
     </div>
     <div class="card-block">

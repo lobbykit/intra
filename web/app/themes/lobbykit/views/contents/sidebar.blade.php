@@ -27,7 +27,8 @@
 	@foreach($sidebar_modules as $module)
 		<div class="row">
 			<?php
-	            setup_postdata(get_post($module->ID));
+                $post = get_post($module->ID);
+	            setup_postdata($GLOBALS['post'] =&$post );
 	            bladerunner(rtrim(papi_get_page_type_template($module->ID), '.php'));
 	        ?>
             <p>&nbsp;</p>

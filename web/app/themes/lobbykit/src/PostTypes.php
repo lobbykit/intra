@@ -11,7 +11,7 @@ class PostTypes
             'show_ui'      => true,
             'show_in_menu' => 'edit.php?post_type=page',
             'show_in_feed' => false,
-            'supports'     => ['title', 'thumbnail'],
+            'supports'     => ['title', 'thumbnail', 'editor'],
             'labels'       => [
                 'name'                  => __('Modules', 'intra'),
                 'singular_name'         => __('Module', 'intra'),
