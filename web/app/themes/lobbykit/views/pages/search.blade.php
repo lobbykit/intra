@@ -9,7 +9,7 @@
 -->
 @endsection
 
-@section('contents')
+@section('main')
 	@if(is_user_logged_in())
 		@include('views.contents.search')
 	@else

@@ -22,16 +22,7 @@ class Article_Page_Type extends Papi_Page_Type
 
     public function register()
     {
-        $this->box(__('Modules', 'intra'), [
-            papi_property([
-                'slug'        => 'modules',
-                'title'       => __('Modules', 'intra'),
-                'description' => __('Modules to display on page under the content', 'intra'),
-                'type'        => 'relationship',
-                'settings'    => [
-                    'post_type' => 'module',
-                ],
-            ]),
-        ]);
+        $this->box(__DIR__.'/../Templates/Module.php');
+        $this->box(__DIR__.'/../Templates/Sidebar.php');
     }
 }

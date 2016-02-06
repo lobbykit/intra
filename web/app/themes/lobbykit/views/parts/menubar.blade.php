@@ -1,5 +1,5 @@
 <!--
-### LobbyKit Bladerunner View: views.parts.sidebar
+### LobbyKit Bladerunner View: views.parts.menubar
 -->
 <aside class="sidebar" style="background-image:url('{{ assets('images/bgtexture.png') }}'); background-repeat: repeat-y;">
     <div class="sidebar-container">

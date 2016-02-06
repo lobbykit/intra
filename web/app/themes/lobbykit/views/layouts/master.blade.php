@@ -8,13 +8,17 @@
         <div class="main-wrapper">
             <div class="app" id="app">
                 @include('views.parts.header')
-                @include('views.parts.sidebar')
-                @yield('contents')
+                @include('views.parts.menubar')
 
-                <div class="row">
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            @yield('main')
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            @include('views.contents.sidebar')
+                        </div>
+                    </div>
                 </div>
 
                 @include('views.parts.footer')
