@@ -3,7 +3,7 @@
         <div class="card-header bordered">
             <div class="header-block">
                 <h3 class="title">
-                 Tasks
+                 {{ get_the_title() }}
              </h3> </div>
              <div class="header-block pull-right"> <a href="" class="btn btn-primary btn-sm rounded pull-right">
                 Add new

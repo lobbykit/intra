@@ -3,7 +3,7 @@
         <div class="card-header">
             <div class="header-block">
                 <h3 class="title">
-                   Sales breakdown
+                   {{ get_the_title() }}
                </h3> 
            </div>
         </div>

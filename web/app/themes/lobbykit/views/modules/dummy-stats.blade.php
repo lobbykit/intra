@@ -3,7 +3,7 @@
         <div class="card-block">
             <div class="title-block">
                 <h4 class="title">
-                    Stats
+                    {{ get_the_title() }}
                 </h4>
                 <p class="title-description"> Website metrics for <a href="http://modularteam.github.io/modularity-free-admin-dashboard-theme-html/">
                    your awesome project

@@ -2,7 +2,7 @@
     <div class="card" data-exclude="xs">
         <div class="card-header card-header-sm bordered">
             <div class="header-block">
-                <h3 class="title">History</h3> 
+                <h3 class="title">{{ get_the_title() }}</h3> 
             </div>
             <ul class="nav nav-tabs pull-right" role="tablist">
                 <li class="nav-item"> <a class="nav-link active" href="#visits" role="tab" data-toggle="tab">Visits</a> </li>
