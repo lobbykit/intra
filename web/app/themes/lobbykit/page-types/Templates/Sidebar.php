@@ -1,7 +1,8 @@
 <?php
+
 return [
     'title' => 'Sidebar',
-    
+
     papi_property([
         'slug'        => 'sidebar_post',
         'title'       => __('Sidebar Reference', 'intra'),
@@ -9,7 +10,7 @@ return [
         'type'        => 'post',
         'settings'    => [
             'placeholder' => 'No page selected, inherit startpage if sidebar empty',
-            'post_type' => 'page',
+            'post_type'   => 'page',
         ],
     ]),
 
@@ -18,11 +19,11 @@ return [
         'title'       => __('Sidebar', 'intra'),
         'description' => __('If no sidebar reference then place modules here!', 'intra'),
         'type'        => 'relationship',
-        'rules' => [
+        'rules'       => [
             [
             'operator' => '=',
             'value'    => null,
-            'slug'     => 'sidebar_post'
+            'slug'     => 'sidebar_post',
             ],
         ],
         'settings'    => [
