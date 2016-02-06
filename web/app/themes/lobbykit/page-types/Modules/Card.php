@@ -36,15 +36,15 @@ class Card_Module_Type extends Papi_Page_Type
                 'title'       => __('Link button color', 'intra'),
                 'description' => __('The color of the link button', 'intra'),
                 'type'        => 'dropdown',
-                'settings' => [
+                'settings'    => [
                     'placeholder' => __('Select a color!', 'intra'),
-                    'items' => [ 
+                    'items'       => [
                         'No color' => 'btn-secondary',
-                        'Red' => 'btn-danger', 
-                        'Green' => 'btn-success', 
-                        'Blue' => 'btn-primary', 
-                        'Orange' => 'btn-warning', 
-                        'Link' => 'btn-link', 
+                        'Red'      => 'btn-danger',
+                        'Green'    => 'btn-success',
+                        'Blue'     => 'btn-primary',
+                        'Orange'   => 'btn-warning',
+                        'Link'     => 'btn-link',
                     ],
                 ],
             ]),
