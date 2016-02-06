@@ -32,6 +32,9 @@ class Login
                     $result['success'] = false;
                     $result['message'] = __('Sorry! Given credentials are not correct.', 'intra');
                 } else {
+                    wp_clear_auth_cookie();
+                    wp_set_current_user($user->ID);
+                    wp_set_auth_cookie($user->ID);
                     $result['success'] = true;
                     $result['message'] = __('Welcome! We will now start redirecting you...', 'intra');
                 }
