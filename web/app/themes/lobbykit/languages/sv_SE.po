@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-06 14:13+0100\n"
-"PO-Revision-Date: 2016-02-06 14:19+0100\n"
+"POT-Creation-Date: 2016-02-06 15:39+0100\n"
+"PO-Revision-Date: 2016-02-06 15:40+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -155,6 +155,18 @@ msgstr "Profilsida"
 #: page-types/Pages/Profile.php:10
 msgid "A page to edit the current logged in profile"
 msgstr "En sida för att ändra inloggad persons profil"
+
+#: page-types/Templates/AnonymousOnly.php:3
+msgid "Authorization"
+msgstr "Behörighet"
+
+#: page-types/Templates/AnonymousOnly.php:6
+msgid "Anonymous only"
+msgstr "Bara för okända"
+
+#: page-types/Templates/AnonymousOnly.php:7
+msgid "Check this if only non logged in users should see this module"
+msgstr "Om en användare inte är inloggad ska denne inte se denna modul"
 
 #: page-types/Templates/Module.php:8 src/PostTypes.php:16 src/PostTypes.php:18
 #: src/PostTypes.php:39
@@ -425,6 +437,10 @@ msgstr "Telefon"
 #: views/modals/register.blade.php:38
 msgid "Your phone number for contact, not required"
 msgstr "Ditt telefonnummer för kontakt, ej obligatoriskt"
+
+#: views/modules/card.blade.php:19
+msgid "Edit module"
+msgstr "Ändra modul"
 
 #: views/parts/footer.blade.php:9
 msgid "Design by <a href=\"https://github.com/modularcode\">ModularCode</a>"

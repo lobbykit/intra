@@ -26,6 +26,7 @@
 @if(sizeof($sidebar_modules))
 	@foreach($sidebar_modules as $module)
         @if(Groups_Post_Access::user_can_read_post($module->ID))
+            <?php if(papi_get_field($module->ID,'anonymous_only') && is_user_logged_in()) continue; ?>
     		<div class="row">
     			<?php
                     $post = get_post($module->ID);

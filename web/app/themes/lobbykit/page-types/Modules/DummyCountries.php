@@ -23,5 +23,6 @@ class Dummy_Countries_Module_Type extends Papi_Page_Type
 
     public function register()
     {
+        $this->box(__DIR__.'/../Templates/AnonymousOnly.php');
     }
 }

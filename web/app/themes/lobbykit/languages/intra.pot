@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-06 14:13+0100\n"
+"POT-Creation-Date: 2016-02-06 15:39+0100\n"
 "PO-Revision-Date: 2016-02-04 17:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -154,6 +154,18 @@ msgstr ""
 
 #: page-types/Pages/Profile.php:10
 msgid "A page to edit the current logged in profile"
+msgstr ""
+
+#: page-types/Templates/AnonymousOnly.php:3
+msgid "Authorization"
+msgstr ""
+
+#: page-types/Templates/AnonymousOnly.php:6
+msgid "Anonymous only"
+msgstr ""
+
+#: page-types/Templates/AnonymousOnly.php:7
+msgid "Check this if only non logged in users should see this module"
 msgstr ""
 
 #: page-types/Templates/Module.php:8 src/PostTypes.php:16
@@ -421,6 +433,10 @@ msgstr ""
 
 #: views/modals/register.blade.php:38
 msgid "Your phone number for contact, not required"
+msgstr ""
+
+#: views/modules/card.blade.php:19
+msgid "Edit module"
 msgstr ""
 
 #: views/parts/footer.blade.php:9

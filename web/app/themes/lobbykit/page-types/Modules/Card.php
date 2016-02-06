@@ -50,5 +50,7 @@ class Card_Module_Type extends Papi_Page_Type
             ]),
 
         ]);
+
+        $this->box(__DIR__.'/../Templates/AnonymousOnly.php');
     }
 }
