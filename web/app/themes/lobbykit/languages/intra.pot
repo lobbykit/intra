@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: LobbyKit\n"
-"POT-Creation-Date: 2016-02-05 14:37+0100\n"
+"POT-Creation-Date: 2016-02-06 14:13+0100\n"
 "PO-Revision-Date: 2016-02-04 17:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -69,73 +69,116 @@ msgstr ""
 msgid "Email text when user gets new welcome mail"
 msgstr ""
 
-#: page-types/Modules/DummyCountries.php:8
-msgid "Dummy Countries"
+#: page-types/Modules/Card.php:9
+msgid "Card"
+msgstr ""
+
+#: page-types/Modules/Card.php:10
+msgid "A simple card to place in sidebar or modules"
+msgstr ""
+
+#: page-types/Modules/Card.php:25
+msgid "Call To Action"
+msgstr ""
+
+#: page-types/Modules/Card.php:29
+msgid "Link button"
+msgstr ""
+
+#: page-types/Modules/Card.php:30
+msgid "A call to action button / link under text"
+msgstr ""
+
+#: page-types/Modules/Card.php:36
+msgid "Link button color"
+msgstr ""
+
+#: page-types/Modules/Card.php:37
+msgid "The color of the link button"
+msgstr ""
+
+#: page-types/Modules/Card.php:40
+msgid "Select a color!"
 msgstr ""
 
 #: page-types/Modules/DummyCountries.php:9
-#: page-types/Modules/DummyHistory.php:9 page-types/Modules/DummyItems.php:9
-#: page-types/Modules/DummySales.php:9 page-types/Modules/DummyStats.php:9
-#: page-types/Modules/DummyTasks.php:9
-msgid "..."
+msgid "Dummy Countries"
 msgstr ""
 
-#: page-types/Modules/DummyHistory.php:8
+#: page-types/Modules/DummyCountries.php:10
+#: page-types/Modules/DummyHistory.php:10
+#: page-types/Modules/DummyItems.php:10 page-types/Modules/DummySales.php:10
+#: page-types/Modules/DummyStats.php:10 page-types/Modules/DummyTasks.php:10
+msgid "This module is just a dummy..."
+msgstr ""
+
+#: page-types/Modules/DummyHistory.php:9
 msgid "Dummy History"
 msgstr ""
 
-#: page-types/Modules/DummyItems.php:8
+#: page-types/Modules/DummyItems.php:9
 msgid "Dummy Items"
 msgstr ""
 
-#: page-types/Modules/DummySales.php:8
+#: page-types/Modules/DummySales.php:9
 msgid "Dummy Sales"
 msgstr ""
 
-#: page-types/Modules/DummyStats.php:8
+#: page-types/Modules/DummyStats.php:9
 msgid "Dummy Stats"
 msgstr ""
 
-#: page-types/Modules/DummyTasks.php:8
+#: page-types/Modules/DummyTasks.php:9
 msgid "Dummy Tasks"
 msgstr ""
 
-#: page-types/Pages/Article.php:8
+#: page-types/Pages/Article.php:9
 msgid "Article page"
 msgstr ""
 
-#: page-types/Pages/Article.php:9
+#: page-types/Pages/Article.php:10
 msgid "Simple text and modules under"
 msgstr ""
 
-#: page-types/Pages/Article.php:24 page-types/Pages/Article.php:27
-#: page-types/Pages/Modules.php:25 page-types/Pages/Modules.php:28
-#: src/PostTypes.php:15 src/PostTypes.php:17 src/PostTypes.php:38
-msgid "Modules"
-msgstr ""
-
-#: page-types/Pages/Article.php:28
-msgid "Modules to display on page under the content"
-msgstr ""
-
-#: page-types/Pages/Modules.php:8
+#: page-types/Pages/Modules.php:9
 msgid "Module page"
 msgstr ""
 
-#: page-types/Pages/Modules.php:9
-msgid "Simple page with modules"
+#: page-types/Pages/Modules.php:10
+msgid "Simple page with modules and a sidebar column"
 msgstr ""
 
-#: page-types/Pages/Modules.php:29
-msgid "Modules to display on page"
-msgstr ""
-
-#: page-types/Pages/Profile.php:8 page-types/ThemeOptions.php:20
+#: page-types/Pages/Profile.php:9 page-types/ThemeOptions.php:20
 msgid "Profile page"
 msgstr ""
 
-#: page-types/Pages/Profile.php:9
+#: page-types/Pages/Profile.php:10
 msgid "A page to edit the current logged in profile"
+msgstr ""
+
+#: page-types/Templates/Module.php:8 src/PostTypes.php:16
+#: src/PostTypes.php:18 src/PostTypes.php:39
+msgid "Modules"
+msgstr ""
+
+#: page-types/Templates/Module.php:9
+msgid "Modules to display on page"
+msgstr ""
+
+#: page-types/Templates/Sidebar.php:8
+msgid "Sidebar Reference"
+msgstr ""
+
+#: page-types/Templates/Sidebar.php:9
+msgid "Points to another page sidebar"
+msgstr ""
+
+#: page-types/Templates/Sidebar.php:19
+msgid "Sidebar"
+msgstr ""
+
+#: page-types/Templates/Sidebar.php:20
+msgid "If no sidebar reference then place modules here!"
 msgstr ""
 
 #: page-types/ThemeOptions.php:23
@@ -183,7 +226,7 @@ msgstr ""
 msgid "Login link sent. Check your inbox!"
 msgstr ""
 
-#: src/Authentications/Login.php:36
+#: src/Authentications/Login.php:39
 msgid "Welcome! We will now start redirecting you..."
 msgstr ""
 
@@ -209,71 +252,71 @@ msgstr ""
 msgid "Not possible to create an account with the data given."
 msgstr ""
 
-#: src/PostTypes.php:16 src/PostTypes.php:18 src/PostTypes.php:37
+#: src/PostTypes.php:17 src/PostTypes.php:19 src/PostTypes.php:38
 msgid "Module"
 msgstr ""
 
-#: src/PostTypes.php:19
+#: src/PostTypes.php:20
 msgid "Create new"
 msgstr ""
 
-#: src/PostTypes.php:20
+#: src/PostTypes.php:21
 msgid "Create new Module"
 msgstr ""
 
-#: src/PostTypes.php:21
+#: src/PostTypes.php:22
 msgid "Edit Module"
 msgstr ""
 
-#: src/PostTypes.php:22
+#: src/PostTypes.php:23
 msgid "New Module"
 msgstr ""
 
-#: src/PostTypes.php:23
+#: src/PostTypes.php:24
 msgid "Show Module"
 msgstr ""
 
-#: src/PostTypes.php:24
+#: src/PostTypes.php:25
 msgid "Search Module"
 msgstr ""
 
-#: src/PostTypes.php:25
+#: src/PostTypes.php:26
 msgid "No Modules found"
 msgstr ""
 
-#: src/PostTypes.php:26
+#: src/PostTypes.php:27
 msgid "No Modules in trash"
 msgstr ""
 
-#: src/PostTypes.php:27
+#: src/PostTypes.php:28
 msgid "Module parent:"
 msgstr ""
 
-#: src/PostTypes.php:28
+#: src/PostTypes.php:29
 msgid "All Modules"
 msgstr ""
 
-#: src/PostTypes.php:29
+#: src/PostTypes.php:30
 msgid "Module Archive"
 msgstr ""
 
-#: src/PostTypes.php:30
+#: src/PostTypes.php:31
 msgid "Add in Module"
 msgstr ""
 
-#: src/PostTypes.php:31
+#: src/PostTypes.php:32
 msgid "Uploaded to Module"
 msgstr ""
 
-#: src/PostTypes.php:32
+#: src/PostTypes.php:33
 msgid "Filter Module list"
 msgstr ""
 
-#: src/PostTypes.php:33
+#: src/PostTypes.php:34
 msgid "Navigate list"
 msgstr ""
 
-#: src/PostTypes.php:34
+#: src/PostTypes.php:35
 msgid "Module list"
 msgstr ""
 
@@ -289,7 +332,20 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: views/contents/unauthorized.blade.php:8
+#: views/contents/post-card.blade.php:13
+msgid "No comments yet"
+msgstr ""
+
+#: views/contents/post-card.blade.php:13
+msgid "1 comment"
+msgstr ""
+
+#: views/contents/post-card.blade.php:13
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: views/contents/unauthorized.blade.php:5
 msgid "Authorization required"
 msgstr ""
 
