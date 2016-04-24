@@ -50,7 +50,7 @@
             dataType: 'json',
             success:function(data) {
               loginVue.warning='';
-              if( data.success ) {
+              if( data.status=='success' ) {
                 loginVue.success = data.message;
                 location.reload(); 
               }
@@ -106,7 +106,7 @@
             dataType: 'json',
             success:function(data) {
               forgotVue.warning='';
-              if( data.success ) {
+              if( data.status=='success' ) {
                 forgotVue.success = data.message;
               }
               else {
@@ -123,7 +123,6 @@
         }
       }
     });
-
 
 
 
@@ -161,14 +160,16 @@
               'email': this.email,
               'password': this.password,
               'display_name': this.display_name,
-              'phone': this.phone,
-              'workplace': this.workplace,
+              'meta': {
+                'phone': this.phone,
+                'workplace': this.workplace,
+              },
               'nonce': this.nonce
             },
             dataType: 'json',
             success:function(data) {
               registerVue.warning='';
-              if( data.success ) {
+              if( data.status=='success' ) {
                 registerVue.success = data.message;
                 jQuery('#registerSendButton').hide();
               }
@@ -186,9 +187,6 @@
         }
       }
     });
-
-
-
 
 
 })(jQuery); // Fully reference jQuery after this point.
