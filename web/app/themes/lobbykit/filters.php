@@ -14,6 +14,5 @@ add_filter('papi/settings/directories', function ($directories) {
 });
 
 add_filter('gatekeeper/messages/new', function () {
-	return papi_get_option('message_new_account');
+    return papi_get_option('message_new_account');
 });
-
